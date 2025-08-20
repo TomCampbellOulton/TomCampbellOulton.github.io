@@ -1,69 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name | CV & Projects</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Tom's Portfolio</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="projects/project1.html">Projects</a>
+        </nav>
+    </header>
 
-  <header>
-    <div class="nav-container">
-      <h1>Your Name</h1>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Hello! I’m [Your Name], a passionate web developer. I love building clean, functional, and beautiful websites.</p>
+    <section id="intro">
+        <h2>Welcome!</h2>
+        <p>Hello, I'm Tom — a 2nd year computer science student, passionate about coding and building amazing projects.</p>
     </section>
 
     <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-container">
-        <div class="project-card">
-          <h3>Project One</h3>
-          <p>Short description. <a href="#">View Project</a></p>
+        <h2>Some of my Featured Projects</h2>
+        <div class="project-list">
+            <div class="project-card">
+                <h3>Project Digital Monopoly</h3>
+                <p>A digital remastering of the Canterbury edition of Monopoly, feauturing various personalities of bots for a unique experience. (Project was graded an A* in my EPQ)</p>
+                <a href="projects/project1.html">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Project Mastermind</h3>
+                <p>A pygame version of the classic board game Mastermind.</p>
+                <a href="projects/project2.html">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Project Fusion Flirt</h3>
+                <p>A dating site I created for my NEA project in my Computer Science A-Level, featuring complex match-making algorithms and a variety of langauges</p>
+                <a href="projects/project3.html">View Project</a>
+            </div>
+    
         </div>
-        <div class="project-card">
-          <h3>Project Two</h3>
-          <p>Short description. <a href="#">View Project</a></p>
-        </div>
-        <div class="project-card">
-          <h3>Project Three</h3>
-          <p>Short description. <a href="#">View Project</a></p>
-        </div>
-      </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
-  </footer>
-
-  <script>
-    // Smooth scrolling for nav links
-    document.querySelectorAll('nav a').forEach(link => {
-      link.addEventListener('click', e => {
-        e.preventDefault();
-        document.querySelector(link.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-  </script>
-
+    <footer>
+        <p>&copy; 2025 Tom Campbell-Oulton. All rights reserved. (ChatGPT used in creating this website)</p>
+    </footer>
 </body>
 </html>
