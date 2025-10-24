@@ -1,0 +1,51 @@
+/* Lost Page Styles (404 Page) */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #eef2f3, #dfe9f3);
+    font-family: Arial, sans-serif;
+}
+
+#intro {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+#intro h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#intro p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+#intro a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#intro a:hover {
+    text-decoration: underline;
+}
+
+/* Optional fun touch: floating compass emoji animation */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
+}
+
+#intro h2 {
+    animation: float 3s ease-in-out infinite;
+}
