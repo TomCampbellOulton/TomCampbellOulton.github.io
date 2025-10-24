@@ -6,6 +6,9 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* full viewport height */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f0f4f8;
     color: #333;
@@ -41,6 +44,7 @@ header nav a:hover {
 
 /* Main Sections */
 main {
+    flex-grow: 1;
     padding: 2rem;
     max-width: 1200px;
     margin: auto;
