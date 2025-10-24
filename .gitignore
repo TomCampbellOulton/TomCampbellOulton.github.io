@@ -1,2 +1,24 @@
-update-site.bat
-update-site.sh
+# Jekyll build folder
+_site/
+
+# Bundler dependency folder
+.bundle/
+
+# Jekyll cache
+.sass-cache/
+.jekyll-cache/
+
+# OS files
+.DS_Store
+
+# Node modules (if you use JS build tools)
+node_modules/
+
+# Logs
+*.log
+
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor

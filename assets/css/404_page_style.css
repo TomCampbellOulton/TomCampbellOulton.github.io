@@ -39,13 +39,17 @@ body {
     text-decoration: underline;
 }
 
-/* Optional fun touch: floating compass emoji animation */
+/* Floating Emoji Animation */
 @keyframes float {
-    0% { transform: translateY(0px); }
+    0% { transform: translateY(0); }
     50% { transform: translateY(-8px); }
-    100% { transform: translateY(0px); }
+    100% { transform: translateY(0); }
 }
 
-#intro h2 {
+#intro .emoji {
+    display: inline-block;       /* Needed for transforms to work on inline element */
     animation: float 3s ease-in-out infinite;
+    font-size: 1.5em;            /* Optional: make it a bit bigger than text */
+    margin-left: 0.3em;          /* Spacing from text */
 }
+

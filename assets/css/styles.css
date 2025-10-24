@@ -26,6 +26,17 @@ header {
     flex-wrap: wrap;
 }
 
+header h1 a {
+  color: inherit;             /* Keep same color as heading */
+  text-decoration: none;      /* Remove underline */
+  font-weight: inherit;       /* Match the original heading weight */
+  transition: color 0.3s ease;
+}
+
+header h1 a:hover {
+  color: #ffdd57;             /* Optional: subtle hover color */
+}
+
 header h1 {
     font-size: 1.8rem;
 }

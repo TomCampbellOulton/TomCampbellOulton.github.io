@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+
+  <body>
+    {% include header.html %}
+
+    <main class="container project-page">
+      <article>
+        <h2>{{ page.title }}</h2>
+        {% if page.subtitle %}
+        <p class="subtitle">{{ page.subtitle }}</p>
+        {% endif %}
+
+        <div class="meta">
+          {% for tag in page.tags %}
+          <span class="tag">{{ tag }}</span>
+          {% endfor %}
+          {% if page.year %}
+          <span class="date">{{ page.year }}</span>
+          {% endif %}
+        </div>
+
+        <section class="project-body">
+          <div class="project-text">
+            {% if page.overview %}
+            <h3>Overview</h3>
+            <p>{{ page.overview }}</p>
+            {% endif %}
+
+            {% if page.tools %}
+            <h4>Tech & Tools</h4>
+            <ul>
+              {% for tool in page.tools %}
+              <li>{{ tool }}</li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+
+            <p class="actions">
+              {% if page.github %}
+              <a class="btn" href="{{ page.github }}" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+              {% endif %}
+              <a class="btn ghost" href="/projects.html">Back to Projects</a>
+            </p>
+          </div>
+
+          <div class="project-media">
+            {% if page.youtube %}
+            <h4>Demo</h4>
+            <div class="video-wrap">
+              <iframe
+                src="https://www.youtube.com/embed/{{ page.youtube }}"
+                title="{{ page.title }} demo video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+            {% endif %}
+
+            {% if page.screenshot %}
+            <figure class="screenshot">
+              <img src="{{ page.screenshot }}" alt="Screenshot of {{ page.title }}">
+              <figcaption>Screenshot: {{ page.title }} UI</figcaption>
+            </figure>
+            {% endif %}
+          </div>
+        </section>
+      </article>
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>

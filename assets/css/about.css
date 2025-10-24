@@ -1,0 +1,72 @@
+/* About Me Page Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.about-me {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.about-me h2 {
+  font-size: 2rem;
+  color: #4a90e2;
+  margin-bottom: 1rem;
+}
+
+.about-me p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Social Links Section */
+.social-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #f8f9fa;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.social-links a i {
+  font-size: 1.2rem;
+}
+
+/* Hover Effects */
+.social-links a.github:hover {
+  background-color: #24292e;
+  color: white;
+}
+
+.social-links a.linkedin:hover {
+  background-color: #0077b5;
+  color: white;
+}
+
+.social-links a.youtube:hover {
+  background-color: #ff0000;
+  color: white;
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+}
