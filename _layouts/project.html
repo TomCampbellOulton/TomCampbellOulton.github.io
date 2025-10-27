@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     {% include head.html %}
+    <link rel="stylesheet" href="/assets/css/projects.css">
   </head>
 
   <body>
@@ -9,63 +10,66 @@
 
     <main class="container project-page">
       <article>
-        <h2>{{ page.title }}</h2>
-        {% if page.subtitle %}
-        <p class="subtitle">{{ page.subtitle }}</p>
-        {% endif %}
 
-        <div class="meta">
-          {% for tag in page.tags %}
+          <header class="project-header">
+    <div class="hero-content container">
+      <h2>{{ page.title }}</h2>
+      <div class="meta">
+        {% for tag in page.tags %}
           <span class="tag">{{ tag }}</span>
-          {% endfor %}
-          {% if page.year %}
-          <span class="date">{{ page.year }}</span>
-          {% endif %}
-        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </header>
 
+  
         <section class="project-body">
           <div class="project-text">
             {% if page.overview %}
-            <h3>Overview</h3>
-            <p>{{ page.overview }}</p>
+              <h3>Overview</h3>
+              <p>{{ page.overview }}</p>
             {% endif %}
 
             {% if page.tools %}
-            <h4>Tech & Tools</h4>
-            <ul>
-              {% for tool in page.tools %}
-              <li>{{ tool }}</li>
-              {% endfor %}
-            </ul>
+              <h4>Tech & Tools</h4>
+              <ul>
+                {% for tool in page.tools %}
+                  <li>{{ tool }}</li>
+                {% endfor %}
+              </ul>
             {% endif %}
 
-            <p class="actions">
+            <div class="actions">
               {% if page.github %}
-              <a class="btn" href="{{ page.github }}" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                <a class="btn" href="https://github.com/TomCampbellOulton/{{ page.github }}" target="_blank" rel="noopener noreferrer">View on GitHub</a>
               {% endif %}
               <a class="btn ghost" href="/projects.html">Back to Projects</a>
-            </p>
+            </div>
           </div>
 
           <div class="project-media">
-            {% if page.youtube %}
-            <h4>Demo</h4>
-            <div class="video-wrap">
-              <iframe
-                src="https://www.youtube.com/embed/{{ page.youtube }}"
-                title="{{ page.title }} demo video"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-              </iframe>
-            </div>
+            {% if page.youtube or page.youtube_playlist %}
+              <h4>Demo</h4>
+              <div class="video-wrap">
+                <iframe
+                  {% if page.youtube %}
+                    src="https://www.youtube.com/embed/{{ page.youtube }}"
+                  {% elsif page.youtube_playlist %}
+                    src="https://www.youtube.com/playlist?list={{ page.youtube_playlist }}"
+                  {% endif %}
+                  title="{{ page.title }} demo video"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe>
+              </div>
             {% endif %}
 
             {% if page.screenshot %}
-            <figure class="screenshot">
-              <img src="{{ page.screenshot }}" alt="Screenshot of {{ page.title }}">
-              <figcaption>Screenshot: {{ page.title }} UI</figcaption>
-            </figure>
+              <figure class="screenshot">
+                <img src="{{ page.screenshot }}" alt="Screenshot of {{ page.title }}">
+                <figcaption>Screenshot: {{ page.title }} UI</figcaption>
+              </figure>
             {% endif %}
           </div>
         </section>

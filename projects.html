@@ -10,61 +10,17 @@ title: My Projects
 
 <main>
     <section id="projects-list">
+        {% for project in site.projects %}
         <div class="project-card">
-            <h3>Canterbury Monopoly Digitally Remastered</h3>
-            <p>For my EPQ artefact I made a digital version of Monopoly Canterbury edition, using Pygame and created a number of different 'personalities' to emulate other people playing the game with you.</p>
-            <a href="projects/project1.html">View Project</a>
+            <h3>{{ project.title }}</h3>
+            {% if project.subtitle %}
+            <p>{{ project.subtitle }}</p>
+            {% else %}
+            <p>{{ project.overview | truncatewords: 20 }}</p>
+            {% endif %}
+            <a href="{{ project.url }}">View Project</a>
         </div>
-        <div class="project-card">
-            <h3>Fusion Flirt</h3>
-            <p>For my NEA at A-level, I created a dating site called FusionFlirt that was targeted towards making accurate matches between individuals, featuring extensive questionairres and customizability and an end to end encrypted messaging service.</p>
-            <a href="projects/project2.html">View Project</a>
-        </div>
-        <div class="project-card">
-            <h3>Mastermind</h3>
-            <p>A digital version of the board game Mastermind, made using pygame for a year 12 computer science project. Featuring leaderboards and extensive customizability.</p>
-            <a href="projects/project3.html">View Project</a>
-        </div>
-        <div class="project-card">
-            <h3>TadSync</h3>
-            <p>An open-source community run project which I contributed towards, allowing players to macro a game on Roblox, handling multiple accounts simultaeneously to maximise the profit.</p>
-            <a href="projects/project4.html">View Project</a>
-        </div>
-        <div class="project-card">
-            <h3>Project Music Player</h3>
-            <p>An open-source, custom made music app to replace Spotify. Controlling music and lyric synchronization from downloaded music files. (Assisted by ChatGPT)</p>
-            <a href="projects/project5.html">View Project</a>
-        </div>
-        <div class="project-card">
-            <h3>Local-Flix</h3>
-            <p>An open-source, custom made music app to replace Netflix. Controlling movies and downloading cover art and descriptions from an API. (Assisted by ChatGPT)</p>
-            <a href="projects/project6.html">View Project</a>
-        </div>
-        <div class="project-card">
-            <h3>Project Wordle Boss</h3>
-            <p>An AI I made to find the optimal play for a more expansive version of wordle, specifically allowing any of the 14,885 5-letter words in the english language as a target. Currently imperfect, but work in progress. (Assisted by ChatGPT)</p>
-            <a href="projects/project7.html">View Project</a>
-        </div>
-        <div class="project-card">
-            <h3>Project Cara</h3>
-            <p>A work in progress. A project for an offline personal assistant to handle tasks from music to todo lists to alarms.</p>
-            <a href="projects/project8.html">View Project</a>
-        </div>
-        <div class="project-card">
-            <h3>Project Edilio</h3>
-            <p>A work in progress. A financial assistant that composes all personal expense reports to summarize your financial situation.</p>
-            <a href="projects/project9.html">View Project</a>
-        </div>
-        <div class="project-card">
-            <h3>Project Security System</h3>
-            <p>A work in progress. A security system that takes input from multiple cameras, checks who they are and records them if they're not an authorized resident. Also pings the main user when unauthorized individuals enter. Entirely offline EXCEPT the messaging to the primary user (silent alarm).</p>
-            <a href="projects/project10.html">View Project</a>
-        </div>
-        <div class="project-card">
-            <h3>Retail Tycoon 2 Monitor</h3>
-            <p>A monitor I created for a Roblox game, Retail Tycoon 2, that monitors your in game sales and records them to your computer, emails you progress reports and your averages so you can view your Roblox progress while away at school.</p>
-            <a href="projects/project11.html">View Project</a>
-        </div>
+        {% endfor %}
 
     </section>
 </main>

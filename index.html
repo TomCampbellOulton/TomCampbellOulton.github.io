@@ -16,22 +16,21 @@ title: My Portfolio
     <section id="projects">
         <h2>Some of my Featured Projects</h2>
         <div class="project-list">
-            <div class="project-card">
-                <h3>Project Digital Monopoly</h3>
-                <p>A digital remastering of the Canterbury edition of Monopoly, featuring various personalities of bots for a unique experience. (Project was graded an A* in my EPQ)</p>
-                <a href="projects/project1.html">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Project Mastermind</h3>
-                <p>A pygame version of the classic board game Mastermind.</p>
-                <a href="projects/project2.html">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Project Fusion Flirt</h3>
-                <p>A dating site I created for my NEA project in my Computer Science A-Level, featuring complex match-making algorithms and a variety of langauges</p>
-                <a href="projects/project3.html">View Project</a>
-            </div>
-    
+            {% assign project = site.projects | where: "key", "homepage-project" %}
+            
+            {% for project in project %}
+                <div class="project-card">
+                    <h3>{{ project.title }}</h3>
+                    {% if project.subtitle %}
+                    <p>{{ project.subtitle }}</p>
+                    {% else %}
+                    <p>{{ project.overview | truncatewords: 20 }}</p>
+                    {% endif %}
+                    <a href="{{ project.url }}">View Project</a>
+                </div>
+            {% endfor %}
+
+
         </div>
     </section>
     </main>
