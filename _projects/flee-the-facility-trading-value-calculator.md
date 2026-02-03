@@ -1,8 +1,8 @@
 ---
 layout: project
-title: Adversarial Attack
-subtitle: An assignment for an Advanced Artificial Intelligence Module, to desgin and implement
-tags: [Python, Pytorch, Tensorflow, Adversarial Attack]
+title: Flee The Facility Trading Calculator
+subtitle: A scraper and calculator to calculate your total inventory value in Flee The Facility.
+tags: [Python, Roblox Flee The Facility]
 year: 2025-2026
 overview: >
   I created a webscraper that downloads the value of the sets from the ftf values website and uses them to calculate the total value of a users inventory.
