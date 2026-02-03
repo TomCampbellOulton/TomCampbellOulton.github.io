@@ -12,7 +12,7 @@ tools:
   - XAMPP
   - HTML
   - CSS
-  - Python
+  - PHP
   - MySQL
   - Python
 github: FusionFlirt

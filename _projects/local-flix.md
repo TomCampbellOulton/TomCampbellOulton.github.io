@@ -6,6 +6,7 @@ tags: [Python, Video Player]
 year: 2025
 overview: >
   A video player I made (using chatgpt) to replace netflix. It downloads the a cover and description with genre tags for each movie you have from an API, and displays them on a GUI which can be sorted by genre, series / movie, etc.
+  I made this to provide a nice user interface for me to view all of my movies and series'.
 tools:
   - Python
   - OS Module
