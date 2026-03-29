@@ -20,7 +20,8 @@ permalink: /certifications/
   <!-- Category filter -->
   <div class="certs-filter reveal" role="group" aria-label="Filter certifications by category">
     <button class="skill-tab active" data-filter="all">All</button>
-    {% assign categories = site.data.certifications | map: "category" | uniq | sort %}
+    {% assign certs = site.data.certifications %}
+    {% assign categories = certs | map: "category" | uniq | sort %}
     {% for cat in categories %}
       <button class="skill-tab" data-filter="{{ cat | downcase }}">{{ cat }}</button>
     {% endfor %}
