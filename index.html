@@ -1,6 +1,6 @@
 ---
 layout: default
-<<<<<<< HEAD
+
 title: Home
 ---
 
@@ -283,42 +283,3 @@ title: Home
 
   </div>
 </section>
-=======
-title: My Portfolio
----
-
-<!DOCTYPE html>
-<html lang="en">
-
-<body>
-    <main>
-    <section id="intro">
-        <h2>Welcome!</h2>
-        <p>Hello, I'm Tom — a 2nd year computer science student, passionate about coding and building amazing projects.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Some of my Featured Projects</h2>
-        <div class="project-list">
-            {% assign project = site.projects | where: "key", "homepage-project" %}
-            
-            {% for project in project %}
-                <div class="project-card">
-                    <h3>{{ project.title }}</h3>
-                    {% if project.subtitle %}
-                    <p>{{ project.subtitle }}</p>
-                    {% else %}
-                    <p>{{ project.overview | truncatewords: 20 }}</p>
-                    {% endif %}
-                    <a href="{{ project.url }}">View Project</a>
-                </div>
-            {% endfor %}
-
-
-        </div>
-    </section>
-    </main>
-
-</body>
-</html>
->>>>>>> 46223e08aa8722942f7922585797a03d88f3fd1b
