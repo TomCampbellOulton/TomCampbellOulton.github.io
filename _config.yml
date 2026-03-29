@@ -1,0 +1,110 @@
+<<<<<<< HEAD
+# ================================================================
+#  PORTFOLIO CONFIG — edit all placeholder values before deploying
+# ================================================================
+
+title:        "Tom Campbell-Oulton"
+tagline:      "CS & AI Student"
+description:  "Second-year Computer Science & Artificial Intelligence student building thoughtful things at the intersection of code and intelligence."
+baseurl:      ""           # Leave "" for username.github.io root deploy
+url:          "https://tomcampbelloulton.github.io"
+
+# ── Author details ───────────────────────────────────────────────
+author:
+  name:        "Tom Campbell-Oulton"
+  initials:    "TCO"
+  email:       "your.email@uni.ac.uk"
+  github:      "tomcampbelloulton"
+  linkedin:    "tom-campbell-oulton"
+  location:    "Canterbury, UK"
+  university:  "University of Liverpool"
+  degree:      "BSc Computer Science with Artificial Intelligence"
+  year:        "2nd Year"
+  cv:          "/assets/files/cv.pdf"   # drop your CV PDF here
+  bio_short:   "I build things that learn."
+  available:   true                      # toggles 'Open to opportunities' badge
+
+# ── Collections ──────────────────────────────────────────────────
+collections:
+  projects:
+    output:    true
+    permalink: /projects/:name/
+
+# ── Front-matter defaults ────────────────────────────────────────
+=======
+title: Tom's Portfolio
+email: tcampbelloulton@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  A showcase of my personal and academic projects and my coding journey.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://tomcampbelloulton.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  tomcampbelloulton
+
+# Author Info
+author:
+  name: Tom Campbell-Oulton
+  github: tomcampbelloulton
+  linkedin: Tom-Campbell-Oulton
+  youtube: tomcampbelloulton
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+  
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Defaults
+>>>>>>> 46223e08aa8722942f7922585797a03d88f3fd1b
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+<<<<<<< HEAD
+      layout: "project"
+
+# ── Build settings ───────────────────────────────────────────────
+markdown:  kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: "highlight"
+
+sass:
+  sass_dir: _sass
+  style:    compressed
+
+# ── Plugins (all supported on GitHub Pages free tier) ────────────
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .gitignore
+  - vendor/
+=======
+      layout: project
+>>>>>>> 46223e08aa8722942f7922585797a03d88f3fd1b

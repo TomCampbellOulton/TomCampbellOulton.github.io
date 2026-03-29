@@ -1,0 +1,45 @@
+# _data/education.yml
+# ================================================================
+
+- institution: "University of Liverpool"
+  degree:      "BSc Computer Science with Artificial Intelligence"
+  period:      "Sep 2024 - Present"
+  location:    "Liverpool, UK"
+  grade:       "First Class (predicted)"
+  current:     true
+  icon:        "🎓"
+  modules:
+    - "Programming Language Paradigms"
+    - "Designing Systems for the Digital Society"
+    - "Data Structures and Algorithms"
+    - "Foundations of Computer Science"
+    - "Introduction to Artificial Intelligence"
+    - "Analytic Techniques for Computer Science"
+    - "Object-Oriented Programming"
+    - "Computer Systems"
+    - "Software Engineerin I"
+    - "Database Development"
+    - "Planning your Career"
+    - "Complexity of Algorithms"
+    - "Group Software Project"
+    - "Computer-Based Trading in Financial Markets"
+    - "Scripting Languages"
+    
+  achievements:
+    - "1st place — adversarial attack assignment (score 15.5+, 100%)"
+    - "70%+ in every 1st year module"
+    - "70%+ in every 2nd module except 'planning your careers' in semester 1"
+    - "Average 1st class grades every semester till present"
+
+- institution: "Simon Langton Grammar School for Boys Sixth Form"
+  degree:      "A-Levels"
+  period:      "Sep 2022 - Jun 2024"
+  location:    "Canterbury, UK"
+  grade:       "EPQ - A*, Computer Science - A, Mathematics - A, Physics - B, Further Mathematics - C"
+  current:     false
+  icon:        "📚"
+  achievements:
+    - "Computer Science NEA — FusionFlirt dating platform"
+    - "Computer Science EPQ — Canterbury Edition Digital Monopoly"
+    - "Computer Science Project — Digitial Mastermind"
+    - "Computer Science Prefect"

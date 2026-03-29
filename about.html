@@ -1,0 +1,247 @@
+---
+layout: default
+title: About Me
+description: "CS & AI student, builder, and lifelong learner — here's a bit more about who I am."
+permalink: /about/
+---
+
+<!-- ══════════════════════════════════════ ABOUT HERO -->
+<section class="about-page__hero">
+  <div class="container">
+    <div class="about-page__inner">
+
+      <!-- Portrait -->
+      <div class="about-page__portrait-wrap reveal">
+        {% if site.author.photo %}
+          <img src="{{ site.baseurl }}{{ site.author.photo }}"
+               alt="{{ site.author.name }}"
+               class="about-page__portrait" />
+        {% else %}
+          <div class="about-page__portrait-placeholder" aria-hidden="true">🧑‍💻</div>
+        {% endif %}
+      </div>
+
+      <!-- Bio -->
+      <div class="about-page__bio reveal delay-2">
+
+        {% if site.author.available %}
+          <div style="margin-bottom:1rem;">
+            <span class="availability-badge">
+              <span class="pulse" aria-hidden="true"></span>
+              Open to internships &amp; opportunities
+            </span>
+          </div>
+        {% endif %}
+
+        <p class="section-label">About</p>
+        <h1 style="font-size: clamp(2rem, 4.5vw, 3rem); margin-bottom: 1rem;">
+          {{ site.author.name }}
+        </h1>
+
+        <p>
+          I'm a {{ site.author.year }} student reading
+          <strong>{{ site.author.degree }}</strong>
+          at <strong>{{ site.author.university }}</strong>.
+          I'm drawn to problems where rigorous engineering meets creative thinking —
+          whether that's training neural networks, building full-stack web applications,
+          or finding elegant algorithmic solutions.
+        </p>
+        <p>
+          Outside of coursework I lead workshops for the university AI Society,
+          contribute to open source projects, and work on personal builds that
+          scratch whatever itch I have that week. I believe the best engineers
+          are curious generalists with deep specialist knowledge, so I try to
+          keep learning broadly while going deep on AI &amp; ML.
+        </p>
+
+        <!-- Quick facts -->
+        <ul class="about-strip__facts" style="margin-top:1.25rem;">
+          <li><span class="icon">🎓</span><span><strong>{{ site.author.university }}</strong></span></li>
+          <li><span class="icon">📚</span><span>{{ site.author.degree }}, {{ site.author.year }}</span></li>
+          <li><span class="icon">📍</span><span>{{ site.author.location }}</span></li>
+          <li><span class="icon">✉️</span><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+        </ul>
+
+        <!-- CTA row -->
+        <div class="hero__actions" style="margin-top:1.5rem; flex-wrap:wrap;">
+          {% if site.author.cv %}
+            <a href="{{ site.baseurl }}{{ site.author.cv }}" target="_blank" rel="noopener"
+               class="btn btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10 9 9 9 8 9"/>
+              </svg>
+              Download CV
+            </a>
+          {% endif %}
+          <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener"
+             class="btn btn-outline">GitHub</a>
+          <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener"
+             class="btn btn-ghost">LinkedIn</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════ STATS STRIP -->
+<div class="container" style="padding-top:3rem;">
+  <div class="stats-strip reveal">
+    <div class="stat-chip">
+      <span class="stat-chip__num">{{ site.projects | size }}</span>
+      <span class="stat-chip__lbl">Projects Built</span>
+    </div>
+    <div class="stat-chip">
+      <span class="stat-chip__num">{{ site.data.certifications | size }}</span>
+      <span class="stat-chip__lbl">Certifications</span>
+    </div>
+    <div class="stat-chip">
+      <span class="stat-chip__num">2+</span>
+      <span class="stat-chip__lbl">Years Coding</span>
+    </div>
+    <div class="stat-chip">
+      <span class="stat-chip__num">∞</span>
+      <span class="stat-chip__lbl">Cups of Tea</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════ EDUCATION & EXPERIENCE -->
+<section class="section" aria-labelledby="edu-heading">
+  <div class="container">
+    <div class="two-col-section">
+
+      <!-- Education -->
+      <div>
+        <p class="section-label reveal">Academic Background</p>
+        <h2 class="section-title reveal delay-1" id="edu-heading">Education</h2>
+
+        <div class="timeline" style="margin-top:2rem;">
+          {% for edu in site.data.education %}
+            <div class="timeline-item {% if edu.current %}current{% endif %} reveal">
+              <div class="timeline-item__header">
+                <span class="timeline-item__org">{{ edu.institution }}</span>
+                <span class="timeline-item__period">{{ edu.period }}</span>
+              </div>
+              <p class="timeline-item__role">{{ edu.degree }}</p>
+              <p class="timeline-item__meta">
+                {{ edu.icon }} {{ edu.location }}
+                {% if edu.grade %} · <strong style="color:var(--accent)">{{ edu.grade }}</strong>{% endif %}
+              </p>
+
+              {% if edu.modules %}
+                <div class="timeline-item__modules">
+                  {% for mod in edu.modules %}
+                    <span class="tag">{{ mod }}</span>
+                  {% endfor %}
+                </div>
+              {% endif %}
+
+              {% if edu.achievements %}
+                <ul class="timeline-item__highlights">
+                  {% for ach in edu.achievements %}
+                    <li>{{ ach }}</li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- Experience -->
+      <div>
+        <p class="section-label reveal">Professional Experience</p>
+        <h2 class="section-title reveal delay-1">Experience</h2>
+
+        <div class="timeline" style="margin-top:2rem;">
+          {% for job in site.data.experience %}
+            <div class="timeline-item {% if job.current %}current{% endif %} reveal">
+              <div class="timeline-item__header">
+                <span class="timeline-item__org">{{ job.company }}</span>
+                <span class="timeline-item__period">{{ job.period }}</span>
+              </div>
+              <p class="timeline-item__role">
+                {{ job.role }}
+                <span class="type-pill {{ job.type }}">{{ job.type | capitalize }}</span>
+              </p>
+              <p class="timeline-item__meta">{{ job.icon }} {{ job.location }}</p>
+              <p class="timeline-item__desc">{{ job.description }}</p>
+
+              {% if job.highlights %}
+                <ul class="timeline-item__highlights">
+                  {% for h in job.highlights %}
+                    <li>{{ h }}</li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+
+              {% if job.tech %}
+                <div class="timeline-item__chips">
+                  {% for t in job.tech %}
+                    <span class="tag">{{ t }}</span>
+                  {% endfor %}
+                </div>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════ SKILLS -->
+<section class="skills-section section" aria-labelledby="skills-heading-about">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label reveal">Toolkit</p>
+      <h2 class="section-title reveal delay-1" id="skills-heading-about">Skills &amp; Technologies</h2>
+    </div>
+
+    <div class="skill-tabs reveal delay-2">
+      {% for cat in site.data.skills.categories %}
+        <button class="skill-tab {% if forloop.first %}active{% endif %}"
+                data-tab="{{ cat.name }}"
+                aria-controls="about-skills-{{ cat.name | slugify }}"
+                aria-selected="{% if forloop.first %}true{% else %}false{% endif %}">
+          {{ cat.icon }} {{ cat.name }}
+        </button>
+      {% endfor %}
+    </div>
+
+    {% for cat in site.data.skills.categories %}
+      <div class="skill-panel {% if forloop.first %}active{% endif %}"
+           data-tab="{{ cat.name }}"
+           id="about-skills-{{ cat.name | slugify }}"
+           role="tabpanel">
+        {% for skill in cat.skills %}
+          <div class="skill-item reveal">
+            <div class="skill-item__header">
+              <span class="skill-item__name">
+                <i class="{{ skill.icon }} colored" aria-hidden="true"></i>
+                {{ skill.name }}
+              </span>
+              <span class="skill-item__pct">{{ skill.level }}%</span>
+            </div>
+            <div class="skill-item__track">
+              <div class="skill-item__bar" data-level="{{ skill.level }}"
+                   role="progressbar"
+                   aria-valuenow="{{ skill.level }}" aria-valuemin="0" aria-valuemax="100"
+                   aria-label="{{ skill.name }} proficiency {{ skill.level }}%"></div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+
+  </div>
+</section>

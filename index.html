@@ -1,0 +1,324 @@
+---
+layout: default
+<<<<<<< HEAD
+title: Home
+---
+
+<!-- ════════════════════════════════════════════════════════ HERO -->
+<section class="hero" aria-label="Introduction">
+
+  <div class="hero__bg" aria-hidden="true">
+    <div class="hero__bg-lines"></div>
+    <div class="hero__bg-warm"></div>
+    <div class="hero__bg-cool"></div>
+  </div>
+
+  <div class="container">
+    <div class="hero__inner">
+
+      <!-- Text content -->
+      <div class="hero__content">
+
+        {% if site.author.available %}
+          <div class="hero__eyebrow reveal">
+            <span class="availability-badge">
+              <span class="pulse" aria-hidden="true"></span>
+              Open to opportunities
+            </span>
+          </div>
+        {% endif %}
+
+        <h1 class="hero__name reveal delay-1">
+          {{ site.author.name }}
+        </h1>
+
+        <p class="hero__role reveal delay-2">
+          I'm a&nbsp;
+          <span class="hero__typed"
+                id="typed"
+                data-phrases='["CS &amp; AI Student","Machine Learning Engineer","Full-Stack Developer","Open Source Contributor","Problem Solver"]'></span>
+          <span class="hero__cursor" aria-hidden="true">|</span>
+        </p>
+
+        <p class="hero__desc reveal delay-3">
+          {{ site.description }}
+        </p>
+
+        <div class="hero__actions reveal delay-4">
+          <a href="{{ site.baseurl }}/projects" class="btn btn-primary">
+            View My Work
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="{{ site.baseurl }}/about" class="btn btn-outline">About Me</a>
+          {% if site.author.cv %}
+            <a href="{{ site.baseurl }}{{ site.author.cv }}" target="_blank" rel="noopener" class="btn btn-ghost">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              CV
+            </a>
+          {% endif %}
+        </div>
+
+        <div class="social-links reveal delay-4" style="margin-top:.25rem;">
+          <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a href="mailto:{{ site.author.email }}" class="social-link" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Decorative code window -->
+      <div class="hero__visual reveal delay-2" aria-hidden="true">
+        <div class="code-window" style="animation: float 18s ease-in-out infinite;">
+          <div class="code-window__bar">
+            <span class="code-window__fname">portfolio.py</span>
+            <div class="code-window__win-btns" aria-hidden="true">
+              <span class="win-btn win-btn--min" title="Minimise">&#x2014;</span>
+              <span class="win-btn win-btn--max" title="Maximise">&#x25A1;</span>
+              <span class="win-btn win-btn--close" title="Close">&#x2715;</span>
+            </div>
+          </div>
+          <div class="code-window__body">
+            <pre>
+<span class="kw">from</span> university <span class="kw">import</span> <span class="cl">Student</span>
+<span class="kw">from</span> skills <span class="kw">import</span> <span class="cl">AI</span>, <span class="cl">WebDev</span>
+
+<span class="cm"># Building cool things since 2023</span>
+<span class="kw">class</span> <span class="cl">{{ site.author.name | split: " " | first }}</span>(<span class="cl">Student</span>):
+    degree = <span class="st">"CS &amp; AI"</span>
+    year   = <span class="st">"2nd Year"</span>
+    skills = [<span class="cl">AI</span>, <span class="cl">WebDev</span>]
+
+    <span class="kw">def</span> <span class="fn">solve</span>(self, problem):
+        <span class="kw">return</span> self.<span class="fn">build</span>(
+            curiosity=<span class="nm">100</span>,
+            coffee=<span class="nm">True</span>
+        )
+
+<span class="cm"># Let's build something great.</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true">
+    <span>scroll</span>
+    <span class="arrow"></span>
+  </div>
+
+</section>
+
+
+<!-- ═══════════════════════════════════════════ FEATURED PROJECTS -->
+<section class="featured section" id="projects" aria-labelledby="feat-heading">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label reveal">Selected Work</p>
+      <h2 class="section-title reveal delay-1" id="feat-heading">Featured Projects</h2>
+      <p class="section-desc reveal delay-2">
+        A handful of things I've built — spanning machine learning, web development, and everything in between.
+      </p>
+    </div>
+
+    <div class="featured__grid stagger">
+      {% assign featured = site.projects | where: "featured", true | sort: "date" | reverse %}
+      {% for project in featured limit: 3 %}
+        <div class="project-card-wrap reveal">
+          <article class="project-card">
+
+            <!-- Thumbnail -->
+            <div class="project-card__thumb">
+              {% if project.thumbnail %}
+                <img src="{{ site.baseurl }}{{ project.thumbnail }}" alt="{{ project.title }}" loading="lazy" />
+              {% else %}
+                <div class="project-card__thumb-placeholder">{{ project.icon | default: "🛠️" }}</div>
+              {% endif %}
+              {% if project.status %}
+                <span class="project-card__status {{ project.status | downcase | replace: ' ', '-' }}">{{ project.status }}</span>
+              {% endif %}
+            </div>
+
+            <div class="project-card__body">
+              <h3 class="project-card__title">{{ project.title }}</h3>
+              <p class="project-card__desc">{{ project.description }}</p>
+
+              <div class="project-card__tags">
+                {% for tag in project.tags limit: 4 %}
+                  <span class="tag">{{ tag }}</span>
+                {% endfor %}
+              </div>
+
+              <div class="project-card__links">
+                <a href="{{ project.url | prepend: site.baseurl }}" class="btn btn-primary btn-sm">
+                  Read More
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                {% if project.github %}
+                  <a href="{{ project.github }}" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                    Code
+                  </a>
+                {% endif %}
+              </div>
+            </div>
+
+          </article>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div style="text-align:center; margin-top:2.5rem;" class="reveal">
+      <a href="{{ site.baseurl }}/projects" class="btn btn-outline">
+        View All Projects
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════ ABOUT STRIP -->
+<section class="about-strip section" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="about-strip__inner">
+
+      <div class="about-strip__portrait reveal">
+        {% if site.author.photo %}
+          <img src="{{ site.baseurl }}{{ site.author.photo }}"
+               alt="{{ site.author.name }}"
+               class="about-strip__portrait-img" />
+        {% else %}
+          <div class="about-strip__portrait-placeholder" aria-hidden="true">🧑‍💻</div>
+        {% endif %}
+      </div>
+
+      <div class="reveal delay-2">
+        <p class="section-label">About Me</p>
+        <h2 class="section-title" id="about-heading">
+          Building at the intersection<br>of code &amp; intelligence.
+        </h2>
+        <p style="margin-top:1rem; max-width:52ch;">
+          I'm a {{ site.author.year }} {{ site.author.degree }} student at
+          {{ site.author.university }}, passionate about machine learning,
+          AI systems, and clean, thoughtful software. When I'm not studying,
+          I'm building projects, contributing to open source, or running
+          workshops for the university AI society.
+        </p>
+
+        <ul class="about-strip__facts">
+          <li><span class="icon">🎓</span> <span>{{ site.author.university }}</span></li>
+          <li><span class="icon">📍</span> <span>{{ site.author.location }}</span></li>
+          <li><span class="icon">📧</span> <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+        </ul>
+
+        <div class="hero__actions" style="margin-top:1.25rem;">
+          <a href="{{ site.baseurl }}/about" class="btn btn-primary">Full Profile</a>
+          {% if site.author.cv %}
+            <a href="{{ site.baseurl }}{{ site.author.cv }}" target="_blank" rel="noopener" class="btn btn-ghost">Download CV</a>
+          {% endif %}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════ SKILLS -->
+<section class="skills-section section" aria-labelledby="skills-heading">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label reveal">Toolkit</p>
+      <h2 class="section-title reveal delay-1" id="skills-heading">Skills &amp; Technologies</h2>
+    </div>
+
+    <!-- Tabs -->
+    <div class="skill-tabs reveal delay-2">
+      {% for cat in site.data.skills.categories %}
+        <button class="skill-tab {% if forloop.first %}active{% endif %}"
+                data-tab="{{ cat.name }}"
+                aria-controls="skills-{{ cat.name | slugify }}"
+                aria-selected="{% if forloop.first %}true{% else %}false{% endif %}">
+          {{ cat.icon }} {{ cat.name }}
+        </button>
+      {% endfor %}
+    </div>
+
+    <!-- Panels -->
+    {% for cat in site.data.skills.categories %}
+      <div class="skill-panel {% if forloop.first %}active{% endif %}"
+           data-tab="{{ cat.name }}"
+           id="skills-{{ cat.name | slugify }}"
+           role="tabpanel">
+        {% for skill in cat.skills %}
+          <div class="skill-item reveal">
+            <div class="skill-item__header">
+              <span class="skill-item__name">
+                <i class="{{ skill.icon }} colored" aria-hidden="true"></i>
+                {{ skill.name }}
+              </span>
+              <span class="skill-item__pct">{{ skill.level }}%</span>
+            </div>
+            <div class="skill-item__track">
+              <div class="skill-item__bar" data-level="{{ skill.level }}" role="progressbar"
+                   aria-valuenow="{{ skill.level }}" aria-valuemin="0" aria-valuemax="100"
+                   aria-label="{{ skill.name }} proficiency {{ skill.level }}%"></div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+
+  </div>
+</section>
+=======
+title: My Portfolio
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <main>
+    <section id="intro">
+        <h2>Welcome!</h2>
+        <p>Hello, I'm Tom — a 2nd year computer science student, passionate about coding and building amazing projects.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Some of my Featured Projects</h2>
+        <div class="project-list">
+            {% assign project = site.projects | where: "key", "homepage-project" %}
+            
+            {% for project in project %}
+                <div class="project-card">
+                    <h3>{{ project.title }}</h3>
+                    {% if project.subtitle %}
+                    <p>{{ project.subtitle }}</p>
+                    {% else %}
+                    <p>{{ project.overview | truncatewords: 20 }}</p>
+                    {% endif %}
+                    <a href="{{ project.url }}">View Project</a>
+                </div>
+            {% endfor %}
+
+
+        </div>
+    </section>
+    </main>
+
+</body>
+</html>
+>>>>>>> 46223e08aa8722942f7922585797a03d88f3fd1b

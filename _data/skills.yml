@@ -1,0 +1,46 @@
+# _data/skills.yml
+# ================================================================
+# level: 0–100 (rendered as progress bar)
+
+categories:
+  - name: "Languages"
+    icon: "💻"
+    skills:
+      - { name: "MYSQL",       level: 100, icon: "devicon-mysql-plain" }
+      - { name: "Python",      level: 95, icon: "devicon-python-plain" }
+      - { name: "Java",        level: 86, icon: "devicon-php-plain" }
+      - { name: "Haskell",     level: 82, icon: "devicon-php-plain" }
+      - { name: "PHP",         level: 85, icon: "devicon-php-plain" }
+      - { name: "JavaScript",  level: 80, icon: "devicon-javascript-plain" }
+      - { name: "HTML/CSS",    level: 75, icon: "devicon-html5-plain" }
+      - { name: "C++",         level: 70, icon: "devicon-github-original" }
+      - { name: "AutoHotkey",  level: 60, icon: "devicon-github-original" }
+
+  - name: "AI & ML"
+    icon: "🤖"
+    skills:
+      - { name: "PyTorch",      level: 80, icon: "devicon-pytorch-original" }
+      - { name: "TensorFlow",   level: 80, icon: "devicon-tensorflow-original" }
+      - { name: "scikit-learn", level: 75, icon: "devicon-scikitlearn-plain" }
+      - { name: "Pandas",       level: 85, icon: "devicon-pandas-original" }
+      - { name: "NumPy",        level: 85, icon: "devicon-numpy-original" }
+      - { name: "matplotlib",   level: 70, icon: "devicon-matplotlib-plain" }
+
+  - name: "Tools & Libs"
+    icon: "🛠️"
+    skills:
+      - { name: "Git",          level: 85, icon: "devicon-git-plain" }
+      - { name: "Pygame",       level: 80, icon: "devicon-python-plain" }
+      - { name: "PyQt5",        level: 72, icon: "devicon-python-plain" }
+      - { name: "Playwright",   level: 70, icon: "devicon-python-plain" }
+      - { name: "pytesseract",  level: 75, icon: "devicon-python-plain" }
+      - { name: "MySQL",        level: 100, icon: "devicon-mysql-plain" }
+
+  - name: "Web"
+    icon: "🌐"
+    skills:
+      - { name: "PHP",      level: 85, icon: "devicon-php-plain" }
+      - { name: "HTML",     level: 75, icon: "devicon-html5-plain" }
+      - { name: "CSS",      level: 75, icon: "devicon-css3-plain" }
+      - { name: "Jekyll",   level: 80, icon: "devicon-jekyll-plain" }
+      - { name: "XAMPP",    level: 85, icon: "devicon-apache-plain" }

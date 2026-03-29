@@ -1,0 +1,19 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{page.title}}</title>
+    
+    <!-- Base site styles -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- Optional page-specific styles -->
+    {% if page.custom_stylesheet %}
+    <link rel="stylesheet" href="{{ page.custom_stylesheet }}">
+    {% endif %}
+
+    <!-- Layout-based styles -->
+    {% if page.layout == "project" %}
+    <link rel="stylesheet" href="/assets/css/project.css">
+    {% endif %}
+
+</head>

@@ -1,0 +1,62 @@
+# _data/experience.yml
+# ================================================================
+- company:   "Simon Langton Grammar School for Boys - Computer Science Department"
+  role:      "Student Mentor & Club Founder"
+  period:    "Oct 2023 - Apr 2024"
+  location:  "Simon Langton Grammar School for Boys, Canterbury, UK"
+  type:      "volunteer"
+  current:   false
+  icon:      "🤖"
+  description: >
+    Founded and led a computer science support club, mentoring students
+    aged 11-16 in programming fundamentals and problem-solving.
+  highlights:
+    - "Mentored 3 students between Years 7-11 over 7 months"
+    - "Designed and delivered weekly sessions on core CS concepts"
+    - "Improved student confidence and engagement in programming"
+  tech: ["Python", "Scratch", "General Programming"]
+
+- company:   "Simon Langton Grammar School for Boys - Mathematics Department"
+  role:      "Student Mentor"
+  period:    "Feb 2022 - Feb 2023"
+  location:  "Simon Langton Grammar School for Boys, Canterbury, UK"
+  type:      "volunteer"
+  current:   false
+  icon:      "📊"
+  description: >
+    Supported younger students with mathematics topics, helping reinforce
+    core concepts and exam preparation skills.
+  highlights:
+    - "Mentored students in Years 7-9 over a 12-month period"
+    - "Provided one-to-one support sessions"
+  tech: ["Mathematics", "Problem Solving"]
+
+- company:   "KentMapsOnline"
+  role:      "Web Developer (Volunteer)"
+  period:    "Apr 2021 - Oct 2021"
+  location:  "Remote / UK"
+  type:      "volunteer"
+  current:   false
+  icon:      "🌐"
+  description: >
+    Contributed to the development of an online mapping platform,
+    building and styling web pages using core front-end technologies.
+  highlights:
+    - "Developed website components using HTML and CSS"
+    - "Collaborated on a live project over a 6-month period"
+  tech: ["HTML", "CSS"]
+
+- company:   "KentMapsOnline"
+  role:      "Web Developer"
+  period:    "Feb 2026 - Jul 2026"
+  location:  "Remote / UK"
+  type:      "internship"
+  current:   true
+  icon:      "💼"
+  description: >
+    Continuing development of the KentMapsOnline platform, focusing on
+    static site generation and performance optimisation.
+  highlights:
+    - "Built and maintained site using Jekyll and Chirpy theme"
+    - "Improved site structure and maintainability"
+  tech: ["Jekyll", "HTML", "CSS"]

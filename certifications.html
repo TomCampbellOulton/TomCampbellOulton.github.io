@@ -1,0 +1,75 @@
+---
+layout: default
+title: Certifications
+description: "Professional qualifications, courses, and awards I've earned — from cloud computing to leadership."
+permalink: /certifications/
+---
+
+<section class="page-hero">
+  <div class="container">
+    <p class="section-label page-hero__eyebrow reveal">Credentials</p>
+    <h1 class="page-hero__title reveal delay-1">Certifications &amp; Awards</h1>
+    <p class="page-hero__desc reveal delay-2">
+      Professional qualifications, courses, and awards I've earned — from cloud computing to leadership.
+    </p>
+  </div>
+</section>
+
+<div class="container section">
+
+  <!-- Category filter -->
+  <div class="certs-filter reveal" role="group" aria-label="Filter certifications by category">
+    <button class="skill-tab active" data-filter="all">All</button>
+    {% assign categories = site.data.certifications | map: "category" | uniq | sort %}
+    {% for cat in categories %}
+      <button class="skill-tab" data-filter="{{ cat | downcase }}">{{ cat }}</button>
+    {% endfor %}
+  </div>
+
+  <!-- Grid -->
+  <div class="certs-grid stagger">
+    {% for cert in site.data.certifications %}
+      <div class="cert-card-wrap reveal"
+           data-category="{{ cert.category | downcase }}">
+        <article class="cert-card"
+                 style="--cert-color: {{ cert.badge_color | default: 'var(--accent)' }}">
+
+          <div class="cert-card__top">
+            <span class="cert-card__icon" aria-hidden="true">{{ cert.icon }}</span>
+            <span class="cert-card__category">{{ cert.category }}</span>
+          </div>
+
+          <h2 class="cert-card__title">{{ cert.name }}</h2>
+          <p class="cert-card__issuer">{{ cert.issuer }}</p>
+          <p class="cert-card__desc">{{ cert.description }}</p>
+
+          <div class="cert-card__footer">
+            <span class="cert-card__date">
+              Issued {{ cert.date }}
+              {% if cert.expiry %} · Expires {{ cert.expiry }}{% endif %}
+            </span>
+            {% if cert.verify_url and cert.verify_url != "" %}
+              <a href="{{ cert.verify_url }}" target="_blank" rel="noopener"
+                 class="cert-card__verify" aria-label="Verify {{ cert.name }} credential">
+                Verify
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            {% endif %}
+          </div>
+
+        </article>
+      </div>
+    {% endfor %}
+  </div>
+
+  <!-- Empty state (if no certs) -->
+  {% if site.data.certifications.size == 0 %}
+    <p style="text-align:center; color:var(--text-muted); margin-top:3rem;">
+      No certifications added yet — check back soon!
+    </p>
+  {% endif %}
+
+</div>

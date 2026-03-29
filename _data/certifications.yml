@@ -1,0 +1,34 @@
+# _data/certifications.yml
+# ================================================================
+# badge_color  : hex used for the left accent stripe on each card
+# verify_url   : link to official credential — leave blank if none
+# category     : used by the filter buttons on the certs page
+- name:        "Duke of Edinburgh Gold Award"
+  issuer:      "The Duke of Edinburgh's Award"
+  date:        "Sep 2023"
+  badge_color: "#EFBF04"
+  category:    "Leadership"
+  icon:        "🏅"
+  description: >
+    Completed the 12-month Gold programme — volunteering, physical skill,
+    and a 4-day qualifying expedition.
+
+- name:        "Duke of Edinburgh Silver Award"
+  issuer:      "The Duke of Edinburgh's Award"
+  date:        "Jun 2022"
+  badge_color: "#C0C0C0"
+  category:    "Leadership"
+  icon:        "🏅"
+  description: >
+    Completed the 9-month Silver programme — volunteering, physical skill,
+    and a 3-day qualifying expedition.
+
+- name:        "Duke of Edinburgh Bronze Award"
+  issuer:      "The Duke of Edinburgh's Award"
+  date:        "Jun 2023"
+  badge_color: "#CD7F32"
+  category:    "Leadership"
+  icon:        "🏅"
+  description: >
+    Completed the 6-month Bronze programme — volunteering, physical skill,
+    and a 2-day qualifying expedition.
