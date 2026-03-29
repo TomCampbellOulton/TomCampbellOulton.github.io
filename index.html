@@ -132,7 +132,7 @@ title: Home
     </div>
 
     <div class="featured__grid stagger">
-      {% assign featured = site.projects | where: "featured", true | sort: "date" | reverse %}
+      {% assign featured = site.projects | where: "featured", true | default empty | sort: "date" | reverse %}
       {% for project in featured limit: 3 %}
         <div class="project-card-wrap reveal">
           <article class="project-card">
