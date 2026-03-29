@@ -124,28 +124,28 @@ permalink: /about/
 
         <div class="timeline" style="margin-top:2rem;">
           {% for edu in site.data.education %}
-            <div class="timeline-item {% if edu.current %}current{% endif %} reveal">
+            <div class="timeline-item {% if education.current %}current{% endif %} reveal">
               <div class="timeline-item__header">
-                <span class="timeline-item__org">{{ edu.institution }}</span>
-                <span class="timeline-item__period">{{ edu.period }}</span>
+                <span class="timeline-item__org">{{ education.institution }}</span>
+                <span class="timeline-item__period">{{ education.period }}</span>
               </div>
-              <p class="timeline-item__role">{{ edu.degree }}</p>
+              <p class="timeline-item__role">{{ education.degree }}</p>
               <p class="timeline-item__meta">
-                {{ edu.icon }} {{ edu.location }}
-                {% if edu.grade %} · <strong style="color:var(--accent)">{{ edu.grade }}</strong>{% endif %}
+                {{ education.icon }} {{ education.location }}
+                {% if education.grade %} · <strong style="color:var(--accent)">{{ education.grade }}</strong>{% endif %}
               </p>
 
-              {% if edu.modules %}
+              {% if education.modules %}
                 <div class="timeline-item__modules">
-                  {% for mod in edu.modules %}
+                  {% for mod in education.modules %}
                     <span class="tag">{{ mod }}</span>
                   {% endfor %}
                 </div>
               {% endif %}
 
-              {% if edu.achievements %}
+              {% if education.achievements %}
                 <ul class="timeline-item__highlights">
-                  {% for ach in edu.achievements %}
+                  {% for ach in education.achievements %}
                     <li>{{ ach }}</li>
                   {% endfor %}
                 </ul>
