@@ -1,6 +1,5 @@
 ---
 layout: project
-<<<<<<< HEAD
 title: "Adversarial Attack"
 description: "A top-scoring adversarial attack on Fashion-MNIST for my Advanced AI module — achieved a score of 15.5+, placing first in the cohort."
 date: 2025-03-01
