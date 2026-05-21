@@ -53,7 +53,10 @@ permalink: /projects/
     <button class="filter-btn active" data-filter="all">All</button>
     {% for entry in sorted_entries %}
       {% assign tag = entry | split: "~~~" | last %}
-      <button class="filter-btn" data-filter="{{ tag | downcase }}">{{ tag }}</button>
+      {% assign count = site.projects | where_exp: "p", "p.tags contains tag" | size %}
+      {% if count >= 3 %}
+        <button class="filter-btn" data-filter="{{ tag | downcase }}">{{ tag }}</button>
+      {% endif %}
     {% endfor %}
   </div>
 
