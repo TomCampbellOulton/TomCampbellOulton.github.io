@@ -1,0 +1,46 @@
+title: Tom's Portfolio
+email: tcampbelloulton@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  A showcase of my personal and academic projects and my coding journey.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://tomcampbelloulton.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  tomcampbelloulton
+
+# Author Info
+author:
+  name: Tom Campbell-Oulton
+  github: tomcampbelloulton
+  linkedin: Tom-Campbell-Oulton
+  youtube: tomcampbelloulton
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+  
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: project
