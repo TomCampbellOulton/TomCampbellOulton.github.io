@@ -47,7 +47,7 @@ permalink: /projects/
     {% assign tag_entries = tag_entries | push: entry %}
   {% endfor %}
 
-  {% assign sorted_entries = tag_entries | sort | reverse %}
+  {% assign sorted_entries = tag_entries | sort %}
 
   <div class="projects-filter reveal" role="group" aria-label="Filter projects by technology">
     <button class="filter-btn active" data-filter="all">All</button>
