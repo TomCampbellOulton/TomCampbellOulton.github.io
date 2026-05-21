@@ -133,7 +133,7 @@ title: Home
 
     <div class="featured__grid stagger">
       {% assign featured = site.projects | where: "featured", true | default empty | sort: "date" | reverse %}
-      {% for project in featured limit: 3 %}
+      {% for project in featured limit: 6 %}
         <div class="project-card-wrap reveal">
           <article class="project-card">
 
@@ -154,7 +154,7 @@ title: Home
               <p class="project-card__desc">{{ project.description }}</p>
 
               <div class="project-card__tags">
-                {% for tag in project.tags limit: 4 %}
+                {% for tag in project.tags limit: 6 %}
                   <span class="tag">{{ tag }}</span>
                 {% endfor %}
               </div>
