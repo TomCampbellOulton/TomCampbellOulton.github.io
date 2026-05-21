@@ -1,20 +1,19 @@
 # _data/experience.yml
 # ================================================================
-- company:   "Simon Langton Grammar School for Boys - Computer Science Department"
-  role:      "Student Mentor & Club Founder"
-  period:    "Oct 2023 - Apr 2024"
-  location:  "Simon Langton Grammar School for Boys, Canterbury, UK"
+- company:   "KentMapsOnline"
+  role:      "Web Developer (Volunteer)"
+  period:    "Apr 2021 - Oct 2021"
+  location:  "Remote / UK"
   type:      "volunteer"
   current:   false
-  icon:      "🤖"
+  icon:      "🌐"
   description: >
-    Founded and led a computer science support club, mentoring students
-    aged 11-16 in programming fundamentals and problem-solving.
+    Contributed to the development of an online mapping platform,
+    building and styling web pages using core front-end technologies.
   highlights:
-    - "Mentored 3 students between Years 7-11 over 7 months"
-    - "Designed and delivered weekly sessions on core CS concepts"
-    - "Improved student confidence and engagement in programming"
-  tech: ["Python", "Scratch", "General Programming"]
+    - "Developed website components using HTML and CSS"
+    - "Collaborated on a live project over a 6-month period"
+  tech: ["HTML", "CSS"]
 
 - company:   "Simon Langton Grammar School for Boys - Mathematics Department"
   role:      "Student Mentor"
@@ -31,20 +30,21 @@
     - "Provided one-to-one support sessions"
   tech: ["Mathematics", "Problem Solving"]
 
-- company:   "KentMapsOnline"
-  role:      "Web Developer (Volunteer)"
-  period:    "Apr 2021 - Oct 2021"
-  location:  "Remote / UK"
+- company:   "Simon Langton Grammar School for Boys - Computer Science Department"
+  role:      "Student Mentor & Club Founder"
+  period:    "Oct 2023 - Apr 2024"
+  location:  "Simon Langton Grammar School for Boys, Canterbury, UK"
   type:      "volunteer"
   current:   false
-  icon:      "🌐"
+  icon:      "🤖"
   description: >
-    Contributed to the development of an online mapping platform,
-    building and styling web pages using core front-end technologies.
+    Founded and led a computer science support club, mentoring students
+    aged 11-16 in programming fundamentals and problem-solving.
   highlights:
-    - "Developed website components using HTML and CSS"
-    - "Collaborated on a live project over a 6-month period"
-  tech: ["HTML", "CSS"]
+    - "Mentored 3 students between Years 7-11 over 7 months"
+    - "Designed and delivered weekly sessions on core CS concepts"
+    - "Improved student confidence and engagement in programming"
+  tech: ["Python", "Scratch", "General Programming"]
 
 - company:   "KentMapsOnline"
   role:      "Web Developer"

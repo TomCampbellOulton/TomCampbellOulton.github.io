@@ -3,11 +3,13 @@ layout: project
 title: "VaultKey — Local Password Manager"
 description: "A Chromium browser extension that stores, autofills, and manages passwords entirely locally with AES-256-GCM encryption, clipboard auto-clear, and encrypted cross-device backup."
 date: 2025-03-29
-tags: ["JavaScript", "Browser Extension", "Security", "Chromium"]
+tags: ["JavaScript", "Browser Extension", "Security", "Chromium", "Vibe-Coded"]
 icon: "🔐"
 status: "In Progress"
 featured: true
 github: "https://github.com/tomcampbelloulton/VaultKey"
+ai_assisted: true
+ai_credits: "Built in collaboration with Claude AI (Anthropic)"
 ---
 
 ## Overview
