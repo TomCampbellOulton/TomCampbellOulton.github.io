@@ -18,15 +18,43 @@ permalink: /projects/
 <div class="container section">
 
   <!-- Filter buttons — auto-generated from project tags -->
+  <!-- Auto-generate filter buttons from all project tags -->
+  {% assign all_tags = "" | split: "" %}
+  {% for project in site.projects %}
+    {% for tag in project.tags %}
+      {% assign all_tags = all_tags | push: tag %}
+    {% endfor %}
+  {% endfor %}
+
+  {% assign unique_tags = all_tags | uniq | sort %}
+
+  <!-- Calculate max count for proper sorting -->
+  {% assign max_count = 0 %}
+  {% for tag in unique_tags %}
+    {% assign count = site.projects | where_exp: "p", "p.tags contains tag" | size %}
+    {% if count > max_count %}
+      {% assign max_count = count %}
+    {% endif %}
+  {% endfor %}
+
+  <!-- Create sortable entries: "paddedCount~~~tagname" -->
+  {% assign tag_entries = "" | split: "" %}
+  {% for tag in unique_tags %}
+    {% assign count = site.projects | where_exp: "p", "p.tags contains tag" | size %}
+    {% assign sort_key = max_count | minus: count %}
+    {% assign padded_key = sort_key | prepend: "00" | slice: -3, 3 %}
+    {% assign entry = padded_key | append: "~~~" | append: tag %}
+    {% assign tag_entries = tag_entries | push: entry %}
+  {% endfor %}
+
+  {% assign sorted_entries = tag_entries | sort | reverse %}
+
   <div class="projects-filter reveal" role="group" aria-label="Filter projects by technology">
     <button class="filter-btn active" data-filter="all">All</button>
-    <button class="filter-btn" data-filter="python">Python</button>
-    <button class="filter-btn" data-filter="ai">AI / ML</button>
-    <button class="filter-btn" data-filter="game dev">Game Dev</button>
-    <button class="filter-btn" data-filter="automation">Automation</button>
-    <button class="filter-btn" data-filter="web">Web</button>
-    <button class="filter-btn" data-filter="data science">Data Science</button>
-    <button class="filter-btn" data-filter="game tools">Game Tools</button>
+    {% for entry in sorted_entries %}
+      {% assign tag = entry | split: "~~~" | last %}
+      <button class="filter-btn" data-filter="{{ tag | downcase }}">{{ tag }}</button>
+    {% endfor %}
   </div>
 
   <!-- Grid -->
