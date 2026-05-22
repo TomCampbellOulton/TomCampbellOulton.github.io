@@ -7,7 +7,7 @@ tags: ["Python", "Machine Learning", "PyTorch", "scikit-learn", "Data Science", 
 icon: "📈"
 status: "Completed"
 featured: true
-github: "https://github.com/tomcampbelloulton/COMP208-SP500-Index-Stock-Predictor"
+github: "https://github.com/TomCampbellOulton/Team45"
 ---
 
 ## Overview
