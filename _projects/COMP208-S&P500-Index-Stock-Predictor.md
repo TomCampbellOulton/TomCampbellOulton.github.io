@@ -1,8 +1,8 @@
 ---
 layout: project
-title: "Group Project — S&P 500 Stock Predictor"
+title: "Group Project - S&P 500 Stock Predictor"
 description: "A group university project applying 7 ML algorithms to 30+ years of S&P 500 data — achieved nearly 200% profit in backtesting with ensemble approaches and custom analysis tools."
-date: 2026-01-01
+date: 2026-05-01
 tags: ["Python", "Machine Learning", "PyTorch", "scikit-learn", "Data Science", "Group Project", "Trading"]
 icon: "📈"
 status: "Completed"
