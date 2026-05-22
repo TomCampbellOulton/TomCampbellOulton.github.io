@@ -62,7 +62,7 @@ Built a proprietary backtesting system from scratch:
 
 ## Backtesting Results
 ### Best Model Performance
-![Backtesting with Highest Possible Theoretical Yield](assets/images/Group_Project-Backtest_With_Best.png)
+![Backtesting with Highest Possible Theoretical Yield](/assets/images/Group_Project-Backtest_With_Best.png)
 *Equity curve showing the best theoretical possible performance for a comparison.
 ### Without the Best Theoretical
 ![Backtesting Results](/assets/images/Group_Project-Backtest_Without_Best.png)
