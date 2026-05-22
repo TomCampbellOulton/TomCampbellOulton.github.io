@@ -60,6 +60,13 @@ Built a proprietary backtesting system from scratch:
 
 *All metrics on held-out test data (2025–2026) using closing price predictions only; directional accuracy is the true trading constraint (59% vs 50% random = only 9% edge).*
 
+## Backtesting Results
+### Best Model Performance
+![Backtesting with Highest Possible Theoretical Yield](assets/images/Group_Project-Backtest_With_Best.png)
+*Equity curve showing the best theoretical possible performance for a comparison.
+### Without the Best Theoretical
+![Backtesting Results](/assets/images/Group_Project-Backtest_Without_Best.png)
+
 ## Key Insight: Accuracy ≠ Profit
 
 The most important finding: **DTR achieved RMSE 3.42 (99.5% accuracy in price prediction) but only 59.5% directional accuracy — and that 59.5% directional accuracy is what actually matters for trading.**
