@@ -3,7 +3,7 @@ layout: project
 title: "This Portfolio Website"
 description: "A modern, fast, and elegant portfolio built with Jekyll, vanilla JavaScript, and CSS — designed and refined iteratively with Claude AI to showcase projects, skills, and experience."
 date: 2026-01-01
-tags: ["Jekyll", "JavaScript", "CSS", "Web Design", "Static Site Generation"]
+tags: ["Jekyll", "JavaScript", "CSS", "Web Design", "Static Site Generation", "Vibe Coded"]
 icon: "🌐"
 status: "Completed"
 featured: true
