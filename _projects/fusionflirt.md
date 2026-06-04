@@ -8,6 +8,7 @@ icon: "💘"
 status: "Completed"
 featured: true
 github: "https://github.com/tomcampbelloulton/FusionFlirt"
+youtube: "Gi9kFUaPyi0"
 ---
 
 ## Overview

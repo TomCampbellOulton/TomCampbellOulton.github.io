@@ -18,6 +18,7 @@ I built a **polished desktop video player** that transforms how you browse a loc
 
 This was built in close collaboration with ChatGPT, where I handled the vision, direction, and refinement while ChatGPT provided the architecture and implementation.
 
+![Image of Functioning Application with Example Videos](/assets/images/LocalFlix.png)
 ## What I Built
 
 ### The Problem

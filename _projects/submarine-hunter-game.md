@@ -17,6 +17,7 @@ I built a **complete turn-based strategy game** in vanilla JavaScript — no fra
 
 The game challenges players to navigate a 10×10 ocean grid, manage fuel reserves, and outmaneuver AI-controlled submarines. It's surprisingly complex for something built from scratch.
 
+![Image of the Game](/assets/images/Killer-Submarine-Game.png)
 ## What I Built
 
 **Setup Phase:**

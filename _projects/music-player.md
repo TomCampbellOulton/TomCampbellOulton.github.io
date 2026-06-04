@@ -18,6 +18,7 @@ I created a **complete music player** that does what Spotify does, but for your 
 
 This was built in close collaboration with ChatGPT, where I handled product direction and iterative refinement while ChatGPT provided the architecture and implementation.
 
+![Image of Functioning Application with Example Music](/assets/images/Songify.png)
 ## What I Built
 
 ### The Problem
