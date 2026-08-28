@@ -1,7 +1,7 @@
 ---
 layout: project
-title: "Monopoly: Canterbury Edition — Digitally Remastered"
-description: "A full digital recreation of the Canterbury Edition of Monopoly, built with Python and Pygame — complete with multiplayer and save/load functionality."
+title: "Monopoly: Canterbury Edition - Digitally Remastered"
+description: "A full digital recreation of the Canterbury Edition of Monopoly, built with Python and Pygame - complete with multiplayer and save/load functionality."
 date: 2023-09-01
 tags: ["Python", "Pygame", "Game Dev"]
 icon: "🎲"
@@ -17,9 +17,9 @@ A complete digital version of the **Monopoly Canterbury Edition** board game, bu
 
 ## Features
 
-- Full Monopoly ruleset — buying, renting, building houses and hotels, mortgaging, bankruptcy
+- Full Monopoly ruleset - buying, renting, building houses and hotels, mortgaging, bankruptcy
 - **Single-player** (vs. CPU) and **multiplayer** (local, pass-and-play)
-- **Save & load** — serialised game state so long games can be paused and resumed
+- **Save & load** - serialised game state so long games can be paused and resumed
 - Canterbury-specific property names, colours, and board layout
 - Smooth Pygame-rendered board and pieces
 

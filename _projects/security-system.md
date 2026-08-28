@@ -35,4 +35,4 @@ A proof-of-concept home security system that uses multiple cameras and facial re
 
 ---
 
-*Work in progress — notifications and multi-camera orchestration under active development.*
+*Work in progress - notifications and multi-camera orchestration under active development.*

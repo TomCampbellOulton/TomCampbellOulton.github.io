@@ -1,7 +1,7 @@
 # _data/certifications.yml
 # ================================================================
 # badge_color  : hex used for the left accent stripe on each card
-# verify_url   : link to official credential — leave blank if none
+# verify_url   : link to official credential - leave blank if none
 # category     : used by the filter buttons on the certs page
 - name:        "Duke of Edinburgh Gold Award"
   issuer:      "The Duke of Edinburgh's Award"
@@ -34,3 +34,12 @@
   description: >
     Completed the 6-month Bronze programme involving volunteering,
     physical activity, skill development, and a 2-day qualifying expedition.
+
+- name:        "Liverpool Advantage Award: Networking Confidence with Industry Experts"
+  issuer:      "Liverpool Advantage"
+  date:        "June 2026"
+  badge_color: "#CD7F32"
+  category:    "Extracurricular"
+  icon:        ""
+  description: >
+    Attended several extracurricular networking events throughout the year

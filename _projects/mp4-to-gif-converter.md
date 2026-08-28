@@ -26,17 +26,17 @@ Built with **MoviePy**, a high-level Python video processing library, the tool a
 - Preserves smooth motion and colour palette
 
 **Trimming**
-- `start_time` — where to begin conversion (seconds)
-- `end_time` — where to stop conversion (seconds)
+- `start_time` - where to begin conversion (seconds)
+- `end_time` - where to stop conversion (seconds)
 - Useful for extracting key moments without pre-editing video
 
 **Resizing**
-- `resize_width` — scale GIF to specific width in pixels
+- `resize_width` - scale GIF to specific width in pixels
 - Aspect ratio preserved automatically
 - Reduces file size for web sharing
 
 **Frame Rate Control**
-- `fps` — frames per second (default: 10)
+- `fps` - frames per second (default: 10)
 - Lower FPS (5-10) = smaller file size, slightly choppier
 - Higher FPS (15-24) = larger file, smoother motion
 - Configurable per conversion
@@ -171,9 +171,9 @@ Conversion time depends on:
 ## Dependencies
 
 **Required:**
-- `moviepy` — main video processing library
-- `ffmpeg` — underlying codec library (auto-installed by moviepy)
-- `imageio` — frame export for GIF encoding
+- `moviepy` - main video processing library
+- `ffmpeg` - underlying codec library (auto-installed by moviepy)
+- `imageio` - frame export for GIF encoding
 
 **Install:**
 ```bash

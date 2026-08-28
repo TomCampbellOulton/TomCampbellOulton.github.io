@@ -12,13 +12,13 @@ github: "https://github.com/tomcampbelloulton/Financial-Display"
 
 ## Overview
 
-A desktop tool for visually understanding personal spending habits. Import your bank export and get an instant breakdown — colour-coded pie charts showing what proportion of your spending went where.
+A desktop tool for visually understanding personal spending habits. Import your bank export and get an instant breakdown - colour-coded pie charts showing what proportion of your spending went where.
 
 ## Features
 
 - Categorised pie charts (food, transport, subscriptions, etc.)
 - Colour-coded by spend proportion
-- Built-in `tkinter` GUI — no browser required
+- Built-in `tkinter` GUI - no browser required
 - `matplotlib` for clean, readable charts
 
 ## Tech Stack

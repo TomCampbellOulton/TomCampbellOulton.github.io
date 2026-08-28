@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "Automated Reports — Retail Tycoon 2"
+title: "Automated Reports - Retail Tycoon 2"
 description: "A screen-reading monitor for the Roblox game Retail Tycoon 2 that emails you hourly sales reports while you're away from the game."
 date: 2025-01-01
 tags: ["Python", "OCR", "Automation", "Game Tools"]
@@ -12,7 +12,7 @@ github: "https://github.com/tomcampbelloulton/Retail-Tycoon-2-Automated-Report"
 
 ## Overview
 
-A background monitor that watches your in-game stats in Retail Tycoon 2 (Roblox) using screen capture and OCR, then emails you with hourly summaries — so you can leave the game running and check in on your progress without being at your desk.
+A background monitor that watches your in-game stats in Retail Tycoon 2 (Roblox) using screen capture and OCR, then emails you with hourly summaries - so you can leave the game running and check in on your progress without being at your desk.
 
 ## Tracked Stats
 

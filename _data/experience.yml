@@ -60,3 +60,19 @@
     - "Built and maintained site using Jekyll and Chirpy theme"
     - "Improved site structure and maintainability"
   tech: ["Jekyll", "HTML", "CSS"]
+
+- company:   "VEC"
+  role:      "Software Engineer Intern"
+  period:    "June 2026 - September 2026"
+  location:  "Liverpool"
+  type:      "internship"
+  current:   true
+  icon:      "💼"
+  description: >
+    Discovering applications of emerging technologies, focusing on Smart
+    Glasses and local AI workflows
+  highlights:
+    - "Built extensive software for smart glasses"
+    - "Created variety of benchmarks for Speech To Text models"
+    - "Designed benchmarks for local LLM models"
+  tech: ["Android Studio", "Kotlin", "Unity", "Python", "llama cpp", "Rust"]

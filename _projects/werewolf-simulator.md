@@ -12,13 +12,13 @@ github: "https://github.com/tomcampbelloulton/Werewolf-Simulation"
 
 ## Overview
 
-A simulation of the social deduction game **Werewolf** (also known as Mafia), built to verify a result I'd heard discussed but never seen properly evidenced: that despite being the minority, the werewolves — as the informed party — hold a structural advantage and tend to win.
+A simulation of the social deduction game **Werewolf** (also known as Mafia), built to verify a result I'd heard discussed but never seen properly evidenced: that despite being the minority, the werewolves - as the informed party - hold a structural advantage and tend to win.
 
 ## What It Shows
 
 The simulator runs thousands of games across varying player counts and werewolf-to-villager ratios, tracking win rates for each side. The results consistently confirm the hypothesis:
 
-> **The informed minority wins more often than the uninformed majority** — the werewolves' knowledge of each other creates coordination the villagers cannot match.
+> **The informed minority wins more often than the uninformed majority** - the werewolves' knowledge of each other creates coordination the villagers cannot match.
 
 This is a neat real-world application of information asymmetry theory.
 

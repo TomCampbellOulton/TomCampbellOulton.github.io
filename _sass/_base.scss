@@ -1,5 +1,5 @@
 // ================================================================
-//  BASE — reset, typography, global layout helpers
+//  BASE - reset, typography, global layout helpers
 // ================================================================
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -17,7 +17,7 @@ body {
   min-height: 100vh;
 }
 
-// ── Typography ────────────────────────────────────────────────────
+// -- Typography ----------------------------------------------------
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-display;
   line-height: 1.2;
@@ -50,7 +50,7 @@ li { color: var(--text-secondary); }
 hr { @include warm-rule; margin: 2.5rem 0; }
 strong { color: var(--text-primary); }
 
-// ── Layout ────────────────────────────────────────────────────────
+// -- Layout --------------------------------------------------------
 .container {
   width: 100%;
   max-width: 1140px;
@@ -61,7 +61,7 @@ strong { color: var(--text-primary); }
 
 .section { padding: 5rem 0; @include md { padding: 3.5rem 0; } }
 
-// ── Section labels (editorial style) ─────────────────────────────
+// -- Section labels (editorial style) -----------------------------
 .section-label {
   font-family: $font-mono;
   font-size: 0.73rem;
@@ -98,7 +98,7 @@ strong { color: var(--text-primary); }
 
 .section-header { margin-bottom: 3rem; }
 
-// ── Utility ───────────────────────────────────────────────────────
+// -- Utility -------------------------------------------------------
 .gradient-text  { @include gradient-text; }
 .text-accent    { color: var(--accent); }
 .text-accent-2  { color: var(--accent-2); }
@@ -111,7 +111,7 @@ strong { color: var(--text-primary); }
   white-space: nowrap; border: 0;
 }
 
-// ── Scroll reveal ─────────────────────────────────────────────────
+// -- Scroll reveal -------------------------------------------------
 .reveal {
   opacity: 0;
   transform: translateY(20px);
@@ -127,7 +127,7 @@ strong { color: var(--text-primary); }
 .delay-3 { transition-delay: 0.3s !important; }
 .delay-4 { transition-delay: 0.4s !important; }
 
-// ── Markdown page content ─────────────────────────────────────────
+// -- Markdown page content -----------------------------------------
 .page-content {
   h2 { margin: 2rem 0 0.75rem; }
   h3 { margin: 1.5rem 0 0.5rem; }
@@ -146,7 +146,7 @@ strong { color: var(--text-primary); }
   }
 }
 
-// ── Reduce motion ─────────────────────────────────────────────────
+// -- Reduce motion -------------------------------------------------
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;

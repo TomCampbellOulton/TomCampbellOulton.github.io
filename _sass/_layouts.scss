@@ -1,8 +1,8 @@
 // ================================================================
-//  LAYOUTS — page-level section styles
+//  LAYOUTS - page-level section styles
 // ================================================================
 
-// ── Hero ──────────────────────────────────────────────────────────
+// -- Hero ----------------------------------------------------------
 .hero {
   position: relative;
   min-height: 100vh;
@@ -142,7 +142,7 @@
   }
 }
 
-// ── Featured projects ─────────────────────────────────────────────
+// -- Featured projects ---------------------------------------------
 .featured {
   background: var(--bg-secondary);
   border-top: 1px solid var(--border);
@@ -156,7 +156,7 @@
   }
 }
 
-// ── About snippet (homepage) ──────────────────────────────────────
+// -- About snippet (homepage) --------------------------------------
 .about-strip {
   &__inner {
     display: grid;
@@ -224,14 +224,14 @@
   }
 }
 
-// ── Skills section ────────────────────────────────────────────────
+// -- Skills section ------------------------------------------------
 .skills-section {
   background: var(--bg-secondary);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
 
-// ── Projects page filter ──────────────────────────────────────────
+// -- Projects page filter ------------------------------------------
 .projects-filter {
   display: flex;
   flex-wrap: wrap;
@@ -250,7 +250,7 @@
   @include sm { grid-template-columns: 1fr; }
 }
 
-// ── Certifications grid ───────────────────────────────────────────
+// -- Certifications grid -------------------------------------------
 .certs-filter {
   display: flex;
   flex-wrap: wrap;
@@ -265,7 +265,7 @@
   @include sm { grid-template-columns: 1fr; }
 }
 
-// ── About page layout ─────────────────────────────────────────────
+// -- About page layout ---------------------------------------------
 .about-page {
   &__hero {
     padding: calc(var(--nav-height) + 4rem) 0 4rem;
@@ -343,7 +343,7 @@
   }
 }
 
-// ── Edu/Exp two-column ────────────────────────────────────────────
+// -- Edu/Exp two-column --------------------------------------------
 .two-col-section {
   display: grid;
   grid-template-columns: 1fr 1fr;

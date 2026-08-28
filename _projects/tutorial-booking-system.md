@@ -14,7 +14,7 @@ github: "https://github.com/tomcampbelloulton/Tutorial-Booking-System"
 
 I built a **production-ready booking system** that handles a common real-world problem: preventing overbooking when multiple users try to reserve the last available spot simultaneously.
 
-The challenge isn't building forms or databases — it's handling the **race condition** where two students can both see one spot available and both successfully book it (creating an impossible state).
+The challenge isn't building forms or databases - it's handling the **race condition** where two students can both see one spot available and both successfully book it (creating an impossible state).
 
 ## What I Built
 
@@ -58,13 +58,13 @@ $cap_stmt = "SELECT tutorials.capacity - COUNT(tutorial_bookings.booking_id)
 // Check capacity
 if ($remaining_capacity > 0) {
     // Insert booking (still locked)
-    $pdo->commit(); // Success — lock released
+    $pdo->commit(); // Success - lock released
 } else {
-    $pdo->rollBack(); // Failure — lock released, no booking made
+    $pdo->rollBack(); // Failure - lock released, no booking made
 }
 ```
 
-The `FOR UPDATE` lock ensures only one user can check and book simultaneously. If they beat you, you see the error immediately — no phantom bookings.
+The `FOR UPDATE` lock ensures only one user can check and book simultaneously. If they beat you, you see the error immediately - no phantom bookings.
 
 ## Input Validation
 
@@ -85,16 +85,16 @@ This sounds boring but it's critical. I implemented:
 - Confirm user has permission to book (already handled by module selection)
 - Confirm it has available capacity (double-checked at booking time)
 
-All validation happens on the server — client-side validation is for UX only.
+All validation happens on the server - client-side validation is for UX only.
 
 ## Code Architecture
 
 **Separation of Concerns:**
-1. **Fetch available modules** — query database for non-full modules
-2. **Display form step 1** — module dropdown
-3. **On submission, fetch available tutorials** — query by module
-4. **Display form step 2** — tutorial dropdown with capacity
-5. **On final submission, execute transaction** — book or reject
+1. **Fetch available modules** - query database for non-full modules
+2. **Display form step 1** - module dropdown
+3. **On submission, fetch available tutorials** - query by module
+4. **Display form step 2** - tutorial dropdown with capacity
+5. **On final submission, execute transaction** - book or reject
 
 No mixed concerns. Each step has a clear purpose.
 
@@ -120,10 +120,10 @@ A system that:
 Most developers skip this. They assume "it probably won't happen" and build naive systems. When it does happen (and it does), the system breaks.
 
 Real systems need:
-- **Transactions** — atomic operations (all-or-nothing)
-- **Locks** — prevent concurrent modification
-- **Validation** — trust nothing from users
-- **Error handling** — expect things to fail
+- **Transactions** - atomic operations (all-or-nothing)
+- **Locks** - prevent concurrent modification
+- **Validation** - trust nothing from users
+- **Error handling** - expect things to fail
 
 ## Tech Stack
 
@@ -131,4 +131,4 @@ Real systems need:
 
 ---
 
-*COMP284 coursework; demonstrates that web development isn't about making pretty forms — it's about reliability, safety, and handling edge cases.*
+*COMP284 coursework; demonstrates that web development isn't about making pretty forms - it's about reliability, safety, and handling edge cases.*

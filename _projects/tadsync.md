@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "Tadsync"
-description: "An updated fork of the Tadsync community project for Roblox Bee Swarm Simulator — synchronises alt accounts via Discord bots to mirror your main account's movements."
+description: "An updated fork of the Tadsync community project for Roblox Bee Swarm Simulator - synchronises alt accounts via Discord bots to mirror your main account's movements."
 date: 2025-01-01
 tags: ["AutoHotkey", "Discord", "Automation", "Community Project"]
 icon: "🐝"
@@ -13,14 +13,14 @@ youtube: "ERBl2etD_Q0"
 
 ## Overview
 
-Tadsync is a community-run automation project for **Roblox Bee Swarm Simulator** that keeps alt accounts in sync with your main account. When your main moves to a new region, all connected alts receive the signal via Discord bots and relocate accordingly — maximising passive resource collection.
+Tadsync is a community-run automation project for **Roblox Bee Swarm Simulator** that keeps alt accounts in sync with your main account. When your main moves to a new region, all connected alts receive the signal via Discord bots and relocate accordingly - maximising passive resource collection.
 
 ## What I Added
 
 I forked an older version of Tadsync and updated it to incorporate:
 
-- **2025 movement patterns** — updated macro paths compatible with the current version of Bee Swarm Simulator
-- **Disabled mondo looting for alt accounts** — prevents alts from accidentally triggering high-risk events that would interrupt their sync loop
+- **2025 movement patterns** - updated macro paths compatible with the current version of Bee Swarm Simulator
+- **Disabled mondo looting for alt accounts** - prevents alts from accidentally triggering high-risk events that would interrupt their sync loop
 
 ## How It Works
 

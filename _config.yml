@@ -1,14 +1,14 @@
 # ================================================================
-#  PORTFOLIO CONFIG — edit all placeholder values before deploying
+#  PORTFOLIO CONFIG - edit all placeholder values before deploying
 # ================================================================
 
 title:        "Tom Campbell-Oulton"
 tagline:      "CS & AI Student"
-description:  "Second-year Computer Science & Artificial Intelligence student building thoughtful things at the intersection of code and intelligence."
+description:  "Third-year Computer Science & Artificial Intelligence student building thoughtful things at the intersection of code and intelligence."
 baseurl:      ""           # Leave "" for username.github.io root deploy
 url:          "https://tomcampbelloulton.github.io"
 
-# ── Author details ───────────────────────────────────────────────
+# -- Author details -----------------------------------------------
 author:
   name:        "Tom Campbell-Oulton"
   initials:    "TCO"
@@ -23,10 +23,10 @@ author:
   bio_short:   "I build things that learn."
   available:   true                      # toggles 'Open to opportunities' badge
 
-# ── Collections ──────────────────────────────────────────────────
+# -- Collections --------------------------------------------------
 collections:
   projects:
     output:    true
     permalink: /projects/:name/
 
-# ── Front-matter defaults ────────────────────────────────────────
+# -- Front-matter defaults ----------------------------------------

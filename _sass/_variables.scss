@@ -1,10 +1,10 @@
 // ================================================================
-//  DESIGN TOKENS — Academic & Creative, warm editorial palette
+//  DESIGN TOKENS - Academic & Creative, warm editorial palette
 // ================================================================
 
-// ── Light theme (default — muted off-white, deep navy, gentle accents) ──
+// -- Light theme (default - muted off-white, deep navy, gentle accents) --
 :root {
-  // Backgrounds — warm off-white, not clinical white
+  // Backgrounds - warm off-white, not clinical white
   --bg-primary:    #F4F6F9;
   --bg-secondary:  #FFFFFF;
   --bg-tertiary:   #E8EDF4;
@@ -12,18 +12,18 @@
   --bg-hover:      rgba(37, 78, 143, 0.05);
   --bg-code:       #EEF1F7;
 
-  // Borders — subtle, navy-tinted
+  // Borders - subtle, navy-tinted
   --border:        rgba(30, 55, 100, 0.1);
   --border-hover:  rgba(37, 78, 143, 0.35);
   --border-focus:  rgba(37, 78, 143, 0.6);
 
-  // Text — deep navy, never pure black
+  // Text - deep navy, never pure black
   --text-primary:   #1A2B4A;
   --text-secondary: #4A5D7A;
   --text-muted:     #9BAABF;
   --text-code:      #2A5FA8;
 
-  // Accents — soft navy blue + muted teal
+  // Accents - soft navy blue + muted teal
   --accent:        #2A5FA8;
   --accent-dim:    rgba(42, 95, 168, 0.08);
   --accent-glow:   rgba(42, 95, 168, 0.16);
@@ -32,12 +32,12 @@
   --accent-warm:   #4A6FA8;
   --accent-gold:   #B07D3A;
 
-  // Gradient — navy to slate-blue, refined and subtle
+  // Gradient - navy to slate-blue, refined and subtle
   --grad-from: #2A5FA8;
   --grad-to:   #5B7EC2;
   --grad-text: linear-gradient(135deg, #1A3D78 0%, #2A5FA8 50%, #5B7EC2 100%);
 
-  // Shadows — cool, barely-there
+  // Shadows - cool, barely-there
   --shadow-sm: 0 1px 4px rgba(20, 40, 80, 0.06), 0 1px 2px rgba(20, 40, 80, 0.04);
   --shadow-md: 0 4px 16px rgba(20, 40, 80, 0.08), 0 2px 6px rgba(20, 40, 80, 0.05);
   --shadow-lg: 0 8px 36px rgba(20, 40, 80, 0.1),  0 4px 12px rgba(20, 40, 80, 0.06);
@@ -57,7 +57,7 @@
   --t-slow: 0.5s  cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-// ── Dark theme override — deep navy, not pitch black ──────────────
+// -- Dark theme override - deep navy, not pitch black --------------
 [data-theme="dark"] {
   --bg-primary:    #0E1623;
   --bg-secondary:  #132035;
@@ -93,7 +93,7 @@
   --shadow-glow: 0 0 36px rgba(91, 143, 214, 0.15);
 }
 
-// ── SCSS-only ─────────────────────────────────────────────────────
+// -- SCSS-only -----------------------------------------------------
 $font-display: 'Playfair Display', Georgia, serif;
 $font-body:    'DM Sans', system-ui, sans-serif;
 $font-mono:    'JetBrains Mono', 'Fira Code', monospace;

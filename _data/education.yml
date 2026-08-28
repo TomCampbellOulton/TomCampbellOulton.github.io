@@ -26,10 +26,11 @@
     - "Scripting Languages"
     
   achievements:
-    - "1st place — adversarial attack assignment (score 15.5+, 100%)"
+    - "1st place - adversarial attack assignment (score 15.5+, 100%)"
     - "70%+ in every 1st year module"
-    - "70%+ in every 2nd module except 'planning your careers' in semester 1"
+    - "70%+ average in 2nd year"
     - "Average 1st class grades every semester till present"
+    - "Secretary of CompSoc"
 
 - institution: "Simon Langton Grammar School for Boys Sixth Form"
   degree:      "A-Levels"
@@ -39,7 +40,7 @@
   current:     false
   icon:        "📚"
   achievements:
-    - "Computer Science NEA — FusionFlirt dating platform"
-    - "Computer Science EPQ — Canterbury Edition Digital Monopoly"
-    - "Computer Science Project — Digitial Mastermind"
+    - "Computer Science NEA - FusionFlirt dating platform"
+    - "Computer Science EPQ - Canterbury Edition Digital Monopoly"
+    - "Computer Science Project - Digitial Mastermind"
     - "Computer Science Prefect"

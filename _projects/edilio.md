@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "Project Edilio — Financial Assistant"
+title: "Project Edilio - Financial Assistant"
 description: "A Python tool that consolidates banking documents into a single clean view, accurately tracking spending, income, refunds, and transfers without double-counting."
 date: 2025-01-01
 tags: ["Python", "Finance", "Automation"]
@@ -18,12 +18,12 @@ Edilio takes the pain out of reviewing bank statements. It ingests multiple bank
 
 - Consolidates statements from multiple accounts into one file
 - Itemised breakdown of spending by category and date
-- **Refund handling** — refunds are matched to their original transactions so they don't inflate apparent income
-- **Transfer handling** — inter-account transfers are excluded from both income and expense totals, preventing double-counting
+- **Refund handling** - refunds are matched to their original transactions so they don't inflate apparent income
+- **Transfer handling** - inter-account transfers are excluded from both income and expense totals, preventing double-counting
 
 ## Motivation
 
-Standard bank exports are messy — multiple files, inconsistent formats, and no understanding of whether a transaction is a genuine expense or a transfer between your own accounts. Edilio solves this cleanly.
+Standard bank exports are messy - multiple files, inconsistent formats, and no understanding of whether a transaction is a genuine expense or a transfer between your own accounts. Edilio solves this cleanly.
 
 ## Tech Stack
 

@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "Submarine Hunter — Strategic Game"
+title: "Submarine Hunter - Strategic Game"
 description: "A turn-based submarine warfare game built in vanilla JavaScript with AI opponents, resource management, and grid-based tactics."
 date: 2025-01-01
 tags: ["JavaScript", "Game Development", "HTML5", "CSS3"]
@@ -13,7 +13,7 @@ demo: "https://tomcampbelloulton.github.io/Submarine-Hunter/"
 
 ## Overview
 
-I built a **complete turn-based strategy game** in vanilla JavaScript — no frameworks, no game engines, just core programming concepts applied to create engaging gameplay.
+I built a **complete turn-based strategy game** in vanilla JavaScript - no frameworks, no game engines, just core programming concepts applied to create engaging gameplay.
 
 The game challenges players to navigate a 10×10 ocean grid, manage fuel reserves, and outmaneuver AI-controlled submarines. It's surprisingly complex for something built from scratch.
 
@@ -31,7 +31,7 @@ Real-time WASD movement with:
 - Win condition (first to 50 points)
 
 **AI System:**
-Each killer submarine uses **greedy pathfinding** — constantly moving toward the player by calculating the shortest path and moving one step closer each turn. It's simple but effective.
+Each killer submarine uses **greedy pathfinding** - constantly moving toward the player by calculating the shortest path and moving one step closer each turn. It's simple but effective.
 
 ## The Interesting Technical Challenges
 
@@ -51,11 +51,11 @@ grid[row][col] = null | {type:'fuel', value:5-9} | {type:'obstacle'} | {type:'pl
 No redundant tracking, no hidden state. Everything comes from the grid.
 
 ### 2. **Collision Detection & Physics**
-Movement isn't just "move if empty" — it's:
-- **Boundary checking** — can't move outside the 10×10 grid
-- **Obstacle collision** — icebergs block movement
-- **Fuel pickup** — automatically restore on collision
-- **Enemy collision** — instant game-over (but you score 10 points first)
+Movement isn't just "move if empty" - it's:
+- **Boundary checking** - can't move outside the 10×10 grid
+- **Obstacle collision** - icebergs block movement
+- **Fuel pickup** - automatically restore on collision
+- **Enemy collision** - instant game-over (but you score 10 points first)
 
 All of this happens in the right order during movement validation.
 
@@ -69,16 +69,16 @@ Killer submarines needed intelligence without being overpowering. I implemented 
 // 3. Repeat each turn
 ```
 
-This makes killers dangerous but not impossible to escape — skilled players can corner them or run to dead-ends.
+This makes killers dangerous but not impossible to escape - skilled players can corner them or run to dead-ends.
 
 ## Code Quality
 
 **Clean Architecture:**
-- **init()** — set up game
-- **handleKey()** — process player input
-- **updateKillers()** — advance AI
-- **renderGrid()** — draw current state
-- **checkCollisions()** — resolve interactions
+- **init()** - set up game
+- **handleKey()** - process player input
+- **updateKillers()** - advance AI
+- **renderGrid()** - draw current state
+- **checkCollisions()** - resolve interactions
 
 Each function has a single responsibility. No spaghetti code.
 
@@ -94,10 +94,10 @@ Every game state change triggers a grid re-render. The DOM stays in sync with ga
 ## Visual Polish
 
 I didn't settle for plain text:
-- **Custom sprite assets** — submarines, fuel cells, icebergs (sourced from Freepik, edited to be transparent PNGs)
-- **Color-coded cells** — green (you), red (enemies), yellow (fuel), grey (obstacles)
-- **Status bar** — always visible fuel, round number, scores
-- **Message system** — clear feedback on what's happening
+- **Custom sprite assets** - submarines, fuel cells, icebergs (sourced from Freepik, edited to be transparent PNGs)
+- **Color-coded cells** - green (you), red (enemies), yellow (fuel), grey (obstacles)
+- **Status bar** - always visible fuel, round number, scores
+- **Message system** - clear feedback on what's happening
 
 ## Results
 
@@ -110,11 +110,11 @@ A fully playable game with:
 ## Why This Matters
 
 This project demonstrates:
-- **Game loop design** — how real games work under the hood
-- **State management** — keeping complex data consistent
-- **Collision detection** — fundamental to any interactive application
-- **AI pathfinding** — used in everything from video games to robotics
-- **Event handling** — responsive user interaction without frameworks
+- **Game loop design** - how real games work under the hood
+- **State management** - keeping complex data consistent
+- **Collision detection** - fundamental to any interactive application
+- **AI pathfinding** - used in everything from video games to robotics
+- **Event handling** - responsive user interaction without frameworks
 
 ## Tech Stack
 

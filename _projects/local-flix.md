@@ -1,7 +1,7 @@
 ---
 layout: project
-title: "Local-Flix — Personal Video Player"
-description: "A Netflix-style desktop video player for your local collection — auto-fetches cover art, descriptions, and genres from TMDB API with a polished PyQt5 interface."
+title: "Local-Flix - Personal Video Player"
+description: "A Netflix-style desktop video player for your local collection - auto-fetches cover art, descriptions, and genres from TMDB API with a polished PyQt5 interface."
 date: 2025-01-01
 tags: ["Python", "PyQt5", "Desktop App", "API Integration", "Vibe-Coded"]
 icon: "🎬"
@@ -14,7 +14,7 @@ ai_credits: "Built in collaboration with ChatGPT"
 
 ## Overview
 
-I built a **polished desktop video player** that transforms how you browse a local video collection. Instead of raw folder navigation, Local-Flix presents movies and series in a Netflix-style interface with live metadata, cover art, and genre filtering — all pulled automatically from TMDB.
+I built a **polished desktop video player** that transforms how you browse a local video collection. Instead of raw folder navigation, Local-Flix presents movies and series in a Netflix-style interface with live metadata, cover art, and genre filtering - all pulled automatically from TMDB.
 
 This was built in close collaboration with ChatGPT, where I handled the vision, direction, and refinement while ChatGPT provided the architecture and implementation.
 
@@ -60,12 +60,12 @@ The UI stays snappy because heavy operations (API calls, image loading) happen o
 - Built the threading system for responsive loading
 - Wrote image fetching and caching logic
 
-This demonstrates **effective AI collaboration** — not having the AI do everything, but using it as a tool to accelerate development while maintaining creative direction.
+This demonstrates **effective AI collaboration** - not having the AI do everything, but using it as a tool to accelerate development while maintaining creative direction.
 
 ## Technical Highlights
 
 **API Integration:**
-Uses `tmdbv3api` to fetch real movie/series metadata. The app handles failures gracefully — if TMDB is down, the app still works (just without metadata).
+Uses `tmdbv3api` to fetch real movie/series metadata. The app handles failures gracefully - if TMDB is down, the app still works (just without metadata).
 
 **Threading:**
 Metadata loading happens on background threads. Your clicks are never delayed by network requests.
@@ -76,10 +76,10 @@ Downloaded images are cached locally so the app doesn't re-fetch the same poster
 ## Why This Matters
 
 This project demonstrates:
-- **AI collaboration skills** — working with AI to build polished applications
-- **Product thinking** — I could define what "good" looks like and direct toward it
-- **Technical judgment** — I knew when ChatGPT's solution was right and when to push back
-- **Full-stack thinking** — APIs, threading, UI, playback all integrated
+- **AI collaboration skills** - working with AI to build polished applications
+- **Product thinking** - I could define what "good" looks like and direct toward it
+- **Technical judgment** - I knew when ChatGPT's solution was right and when to push back
+- **Full-stack thinking** - APIs, threading, UI, playback all integrated
 
 ## Tech Stack
 

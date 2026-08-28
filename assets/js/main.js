@@ -1,10 +1,10 @@
 // ================================================================
-//  MAIN.JS  —  theme · nav · typing · reveal · skills · filters
+//  MAIN.JS  -  theme · nav · typing · reveal · skills · filters
 // ================================================================
 
 'use strict';
 
-// ── Theme ─────────────────────────────────────────────────────────
+// -- Theme ---------------------------------------------------------
 const Theme = (() => {
   const KEY  = 'pf-theme';
   const root = document.documentElement;
@@ -27,7 +27,7 @@ const Theme = (() => {
   return { init };
 })();
 
-// ── Navigation ────────────────────────────────────────────────────
+// -- Navigation ----------------------------------------------------
 const Nav = (() => {
   const header = document.getElementById('site-header');
   const toggle = document.getElementById('nav-toggle');
@@ -71,7 +71,7 @@ const Nav = (() => {
   return { init };
 })();
 
-// ── Typing animation ──────────────────────────────────────────────
+// -- Typing animation ----------------------------------------------
 class Typer {
   constructor(el, phrases, opts = {}) {
     this.el      = el;
@@ -104,7 +104,7 @@ class Typer {
   }
 }
 
-// ── Scroll reveal ─────────────────────────────────────────────────
+// -- Scroll reveal -------------------------------------------------
 const Reveal = (() => {
   const obs = new IntersectionObserver(entries => {
     entries.forEach(e => {
@@ -119,7 +119,7 @@ const Reveal = (() => {
   return { init };
 })();
 
-// ── Skill bars ────────────────────────────────────────────────────
+// -- Skill bars ----------------------------------------------------
 const Skills = (() => {
   const tabsEl   = document.querySelector('.skill-tabs');
   const panels   = [...document.querySelectorAll('.skill-panel')];
@@ -164,7 +164,7 @@ const Skills = (() => {
   return { init };
 })();
 
-// ── Generic filter (projects + certs) ────────────────────────────
+// -- Generic filter (projects + certs) ----------------------------
 const Filter = (() => {
   const setup = (gridSel, wrapSel, btnSel, key = 'tags') => {
     const grid = document.querySelector(gridSel);
@@ -194,7 +194,7 @@ const Filter = (() => {
   return { init };
 })();
 
-// ── Smooth anchor scroll ──────────────────────────────────────────
+// -- Smooth anchor scroll ------------------------------------------
 const Anchors = (() => {
   const init = () => {
     document.querySelectorAll('a[href^="#"]').forEach(a => {
@@ -210,7 +210,7 @@ const Anchors = (() => {
   return { init };
 })();
 
-// ── Boot ──────────────────────────────────────────────────────────
+// -- Boot ----------------------------------------------------------
 document.addEventListener('DOMContentLoaded', () => {
   Theme.init();
   Nav.init();

@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "Group Project - S&P 500 Stock Predictor"
-description: "A group university project applying 7 ML algorithms to 30+ years of S&P 500 data — achieved nearly 200% profit in backtesting with ensemble approaches and custom analysis tools."
+description: "A group university project applying 7 ML algorithms to 30+ years of S&P 500 data - achieved nearly 200% profit in backtesting with ensemble approaches and custom analysis tools."
 date: 2026-05-01
 tags: ["Python", "Machine Learning", "PyTorch", "scikit-learn", "Data Science", "Group Project", "Trading"]
 icon: "📈"
@@ -21,13 +21,13 @@ A COMP208 group project applying machine learning to 30+ years of S&P 500 histor
 ### Models Developed (7 total)
 
 **Deployed Models:**
-- **Artificial Neural Network (ANN)** — 3-layer fully connected network; RMSE 29.47 on closing prices
-- **CNN-LSTM (Convolutional Neural Network and LSTM)** — hybrid architecture combining convolution with sequence learning; RMSE 30.90
-- **K-Nearest Neighbours (KNN)** — instance-based approach; RMSE 29.74
-- **K-Nearest Neighbours with Pattern Matching (KNN-PM)** — custom implementation detecting similar price patterns in history; RMSE 22.51
-- **Gated Recurrent Unit (GRU)** — simplified LSTM variant; RMSE 264.27
-- **Decision Tree Regressor (DTR)** — gradient-boosted ensemble; **RMSE 2.97** (best predictor)
-- **Seer** — custom ensemble model combining best-performing architectures
+- **Artificial Neural Network (ANN)** - 3-layer fully connected network; RMSE 29.47 on closing prices
+- **CNN-LSTM (Convolutional Neural Network and LSTM)** - hybrid architecture combining convolution with sequence learning; RMSE 30.90
+- **K-Nearest Neighbours (KNN)** - instance-based approach; RMSE 29.74
+- **K-Nearest Neighbours with Pattern Matching (KNN-PM)** - custom implementation detecting similar price patterns in history; RMSE 22.51
+- **Gated Recurrent Unit (GRU)** - simplified LSTM variant; RMSE 264.27
+- **Decision Tree Regressor (DTR)** - gradient-boosted ensemble; **RMSE 2.97** (best predictor)
+- **Seer** - custom ensemble model combining best-performing architectures
 
 ### Custom Backtesting Engine
 
@@ -54,9 +54,9 @@ Built a proprietary backtesting system from scratch:
 | **Random Forest** (group) | $45.32 | $58.76 | 55.1% |
 
 **Metrics Key (Closing Price):**
-- **MAE (Mean Absolute Error)** — average $ deviation from actual closing price (lower is better)
-- **RMSE (Root Mean Squared Error)** — penalises large errors more heavily; in $ units (lower is better)
-- **Dir. Acc. (Directional Accuracy)** — % of trading days correctly predicted as up or down movement
+- **MAE (Mean Absolute Error)** - average $ deviation from actual closing price (lower is better)
+- **RMSE (Root Mean Squared Error)** - penalises large errors more heavily; in $ units (lower is better)
+- **Dir. Acc. (Directional Accuracy)** - % of trading days correctly predicted as up or down movement
 
 *All metrics on held-out test data (2025–2026) using closing price predictions only; directional accuracy is the true trading constraint (59% vs 50% random = only 9% edge).*
 
@@ -69,7 +69,7 @@ Built a proprietary backtesting system from scratch:
 
 ## Key Insight: Accuracy ≠ Profit
 
-The most important finding: **DTR achieved RMSE 3.42 (99.5% accuracy in price prediction) but only 59.5% directional accuracy — and that 59.5% directional accuracy is what actually matters for trading.**
+The most important finding: **DTR achieved RMSE 3.42 (99.5% accuracy in price prediction) but only 59.5% directional accuracy - and that 59.5% directional accuracy is what actually matters for trading.**
 
 This demonstrates the gap between prediction accuracy and profitable trading:
 - Predicting close prices to within $3 is impressive
@@ -86,9 +86,9 @@ This demonstrates the gap between prediction accuracy and profitable trading:
 - Website and results presentation
 
 **Repository Structure:**
-- **Personal repo** — My individual model implementations and backtesting engine
-- **Group repo** — Integrated models, database schema, and final results
-- **Website repo** — Frontend for displaying hindcast and forward predictions
+- **Personal repo** - My individual model implementations and backtesting engine
+- **Group repo** - Integrated models, database schema, and final results
+- **Website repo** - Frontend for displaying hindcast and forward predictions
 
 ## Database & Data Pipeline
 
@@ -104,11 +104,11 @@ This demonstrates the gap between prediction accuracy and profitable trading:
 
 ### Prediction Pipeline
 
-1. **Feature Engineering** — Technical indicators (MA, RSI, MACD), lag features, volatility measures
-2. **Train/Test Split** — 25 years training data, 5 years held-out test period
-3. **Prediction Task** — Weekly ahead forecasts for OHLC prices
-4. **Backtesting** — Simulate trading strategies based on model predictions
-5. **Walk-Forward Validation** — Retrain models periodically to avoid look-ahead bias
+1. **Feature Engineering** - Technical indicators (MA, RSI, MACD), lag features, volatility measures
+2. **Train/Test Split** - 25 years training data, 5 years held-out test period
+3. **Prediction Task** - Weekly ahead forecasts for OHLC prices
+4. **Backtesting** - Simulate trading strategies based on model predictions
+5. **Walk-Forward Validation** - Retrain models periodically to avoid look-ahead bias
 
 ### Backtesting Strategy
 
@@ -122,7 +122,7 @@ The custom backtesting engine:
 
 1. **DTR vastly outperformed** neural and classical approaches in prediction accuracy (RMSE 3.42 vs 30+)
 2. **Pattern matching (KNN-PM)** achieved surprising directional accuracy (71.9%) despite higher RMSE
-3. **High prediction accuracy does not guarantee high trading profit** — directional accuracy, not absolute error, is the limiting factor
+3. **High prediction accuracy does not guarantee high trading profit** - directional accuracy, not absolute error, is the limiting factor
 4. **Ensemble approaches** combining multiple models improved robustness and reduced overfitting
 5. **A 9% edge in directional accuracy (59% vs 50%)** compounds to 200%+ returns over multi-year backtests
 

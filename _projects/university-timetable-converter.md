@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "University Timetable → Google Calendar"
-description: "A web scraper that converts the University of Liverpool's timetable portal into a Google Calendar-compatible CSV — one import and your whole timetable is there."
+description: "A web scraper that converts the University of Liverpool's timetable portal into a Google Calendar-compatible CSV - one import and your whole timetable is there."
 date: 2026-01-01
 tags: ["Python", "Web Scraping", "Automation", "Playwright"]
 icon: "📅"
@@ -20,7 +20,7 @@ I originally planned to push events directly to Google Calendar via the API, but
 
 - No API keys required from the user
 - No passwords stored longer than the session
-- The output is portable — works with Apple Calendar, Outlook, and anything else that accepts `.ics` / `.csv` imports
+- The output is portable - works with Apple Calendar, Outlook, and anything else that accepts `.ics` / `.csv` imports
 
 > **Security tip:** Delete your credentials from the config file after each use.
 
@@ -41,4 +41,4 @@ Apple Calendar support has been added, though I can't personally test it (no Mac
 
 ---
 
-*Open source — free for anyone at the University of Liverpool to use.*
+*Open source - free for anyone at the University of Liverpool to use.*

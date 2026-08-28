@@ -8,6 +8,7 @@ categories:
     skills:
       - { name: "MYSQL",       level: 100, icon: "devicon-mysql-plain" }
       - { name: "Python",      level: 95, icon: "devicon-python-plain" }
+      - { name: "Kotlin",      level: 90, icon: "devicon-python-plain" }
       - { name: "Java",        level: 86, icon: "devicon-php-plain" }
       - { name: "Haskell",     level: 82, icon: "devicon-php-plain" }
       - { name: "PHP",         level: 85, icon: "devicon-php-plain" }
@@ -25,6 +26,11 @@ categories:
       - { name: "Pandas",       level: 85, icon: "devicon-pandas-original" }
       - { name: "NumPy",        level: 85, icon: "devicon-numpy-original" }
       - { name: "matplotlib",   level: 70, icon: "devicon-matplotlib-plain" }
+      - { name: "langgraph",    level: 70, icon: "devicon-langgraph-plain" }
+      - { name: "llama cpp",    level: 70, icon: "devicon-llamacpp-plain" }
+      - { name: "lm studio",    level: 70, icon: "devicon-lmstudio-plain" }
+      - { name: "vLLM",         level: 70, icon: "devicon-vllm-plain" }
+      - { name: "llama cpp",    level: 70, icon: "devicon-llamacpp-plain" }
 
   - name: "Tools & Libs"
     icon: "🛠️"
@@ -35,6 +41,10 @@ categories:
       - { name: "Playwright",   level: 70, icon: "devicon-python-plain" }
       - { name: "pytesseract",  level: 75, icon: "devicon-python-plain" }
       - { name: "MySQL",        level: 100, icon: "devicon-mysql-plain" }
+      - { name: "Docker",        level: 80, icon: "devicon-docker-plain" }
+      - { name: "Docker sandboxes", level: 80, icon: "devicon-dockersbx-plain" }
+      - { name: "Pi Harness", level: 85, icon: "devicon-piharness-plain" }
+      - { name: "Tailscale", level: 70, icon: "devicon-tailscale-plain" }
 
   - name: "Web"
     icon: "🌐"
@@ -42,5 +52,6 @@ categories:
       - { name: "PHP",      level: 85, icon: "devicon-php-plain" }
       - { name: "HTML",     level: 75, icon: "devicon-html5-plain" }
       - { name: "CSS",      level: 75, icon: "devicon-css3-plain" }
+      - { name: "JS",   level: 80, icon: "devicon-javascript-plain" }
       - { name: "Jekyll",   level: 80, icon: "devicon-jekyll-plain" }
       - { name: "XAMPP",    level: 85, icon: "devicon-apache-plain" }
